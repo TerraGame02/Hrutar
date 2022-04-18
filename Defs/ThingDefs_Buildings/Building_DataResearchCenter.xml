@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>    
+      <ThingDef ParentName="BenchBase">
+    <defName>ValiHiTechResearchBench</defName>
+    <label>Data Research Center</label>
+    <description>A high-tech Research with computers and electronic measurement equipment. Allows more rapid research, and unlocks advanced research projects.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <size>(6,3)</size>
+    <minifiedDef />
+    <thingCategories Inherit="false" />
+    <costList>
+	    <Steel>300</Steel>
+        <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
+        <Hrutar_Component>30</Hrutar_Component>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Assets/DataCenter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(6,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+	<rotatable>false</rotatable>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>1550</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>2.5</ResearchSpeedFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2050</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>MultiAnalyzer</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+	<researchPrerequisites>
+	  <li>HrutarTemplarTech</li>
+	</researchPrerequisites>
+  </ThingDef>
+</Defs>

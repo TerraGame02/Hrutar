@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>	
+	<HairDef>
+		<defName>Ram_Horns1</defName>
+		<label>Ogre horns(front)</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Ram_Horns1</texPath>
+		<styleTags>
+			<li>Ram_Horn</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>Ram_Horns2</defName>
+		<label>Ogre horns(front)</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Ram_Horns2</texPath>
+		<styleTags>
+			<li>Ram_Horn</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>Ram_Horns3</defName>
+		<label>Ogre horns(front)</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Ram_Horns3</texPath>
+		<styleTags>
+			<li>Ram_Horn</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>Ram_Horns4</defName>
+		<label>Ogre horns(front)</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Ram_Horns4</texPath>
+		<styleTags>
+			<li>Ram_Horn</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>Ram_Horns5</defName>
+		<label>Ogre horns(front)</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Ram_Horns5</texPath>
+		<styleTags>
+			<li>Ram_Horn</li>
+		</styleTags>
+	</HairDef>
+</Defs>

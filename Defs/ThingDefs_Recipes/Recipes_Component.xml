@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=================================== Gjallarian Component ==========================================-->
+
+  <RecipeDef>
+    <defName>Make_ComponentGjallarian</defName>
+    <label>Craft Gjallarian Component</label>
+    <description>Make Gjallarian Component.</description>
+    <jobString>Making Gjallarian Component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hrutar_BlackSteel</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Hrutar_Component>4</Hrutar_Component>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+</Defs>

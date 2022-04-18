@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>SuviBatterySmall</defName>
+        <label>Small Fission Battery</label>
+        <description>Hrutarian Tech Spacer Fission Battery. Energy Capacity: 9500</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <thingClass>HrutarianPowerGen.Building_SmallFissionBattery</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Assets/SmallBattery</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,3)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.40</fillPercent>
+        <tickerType>Normal</tickerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsPower</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>2500</MaxHitPoints>
+            <WorkToBuild>1500</WorkToBuild>
+            <Mass>40</Mass>
+            <Flammability>1.2</Flammability>
+            <Beauty>3</Beauty>
+        </statBases>
+        <size>(2,3)</size>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+    <costList>
+      <Hrutar_BlackSteel>120</Hrutar_BlackSteel>
+      <Hrutar_Component>4</Hrutar_Component>
+    </costList>
+    <researchPrerequisites>
+	  <li>HrutarTemplarTech</li>
+	</researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>7500</storedEnergyMax>
+                <efficiency>0.55</efficiency>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Power</designationCategory>
+        <staticSunShadowHeight>0.2</staticSunShadowHeight>
+        <constructEffect>ConstructMetal</constructEffect>
+        <designationHotKey>Misc4</designationHotKey>
+        <canOverlapZones>false</canOverlapZones>
+    </ThingDef>
+</Defs>

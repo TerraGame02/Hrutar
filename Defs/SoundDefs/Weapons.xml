@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Shot_RestorerPistol</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/50CalRestorerPistol</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_SoulRipperRifle</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/60CalSoulRipperRifle</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>90</min>
+            <max>120</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_SpectreSniperRifle</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/80CalSpectreSniperRifle</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>120</min>
+            <max>150</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_NovaBlaster</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/NovaBlaster</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>120</min>
+            <max>150</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_Devastator</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/70CalDevastator</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>120</min>
+            <max>150</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Heavy_Melee</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/HeavySwordHit</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>40</min>
+            <max>50</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Heavy_Chain_Hit</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>8</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Chainsaw2</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>20</min>
+            <max>30</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.3</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Heavy_Chain_Pickup</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Chainsaw1</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>80</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Viking</defName>  
+    <context>MapOnly</context>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Turrets/VikingLaunch</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>120</min>
+            <max>150</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Cull</defName>  
+    <context>MapOnly</context>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Turrets/CullFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>180</min>
+            <max>190</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Percival</defName>  
+    <context>MapOnly</context>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Turrets/PercivalFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>100</min>
+            <max>120</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Mjolnir</defName>  
+    <context>MapOnly</context>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Turrets/MjolnirFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>200</min>
+            <max>230</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+  <SoundDef>
+    <defName>Shot_Recson</defName>  
+    <context>MapOnly</context>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Turrets/RecsonFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>80</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot_Arta</defName>  
+    <context>MapOnly</context>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Turrets/ArtaFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>100</min>
+            <max>120</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  <SoundDef>
+    <defName>Shot_Stalker</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/StalkerFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_Marauder</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/MarauderFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_Lancer</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/LancerFire</clipPath>
+          </li>
+        </grains>      
+          <volumeRange>
+            <min>60</min>
+            <max>90</max>
+          </volumeRange>
+          <pitchRange>
+            <min>1.0</min>
+            <max>1.5</max>
+          </pitchRange>
+          <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+</Defs>

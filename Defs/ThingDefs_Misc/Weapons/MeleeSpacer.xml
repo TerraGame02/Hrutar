@@ -1,0 +1,985 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Dainas_Eclipse_Crucible</defName>
+    <label>Daina's Eclipse Crucible</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Weapons/Dainas_Eclipse_Crucible</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>Crucible Cut</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>200</power>
+        <armorPenetration>5</armorPenetration>
+        <cooldownTime>10</cooldownTime>
+      </li>
+      <li>
+        <label>Eclipse Thrust</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>3.5</armorPenetration>
+      </li>
+      <li>
+        <label>MoonFall Slash</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>85</power>
+        <cooldownTime>4</cooldownTime>
+        <armorPenetration>2.5</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Dianas_Power_Gauntlet</defName>
+    <label>Diana's Power Gauntlet</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Weapons/Dianas_Power_Gauntlet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.7</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, 0.25)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, 0.25)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, 0.25)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, 0.25)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Laevateinn</defName>
+    <label>Laevateinn</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Weapons/Laevateinn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.3</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>100</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>200</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>5</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>250</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>5</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Sidonias_Dragonslayer</defName>
+    <label>Sidonia's Dragonslayer</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Weapons/Sidonias_Dragonslayer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>95</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>75</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarChainAxe</defName>
+    <label>Templar ChainAxe</label>
+    <description>Placeholder</description>
+    <soundInteract>Heavy_Chain_Pickup</soundInteract>
+    <meleeHitSound>Heavy_Chain_Hit</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_ChainAxe</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarChainAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>Chainsaw Teeth</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>0.8</cooldownTime>
+        <armorPenetration>4.6</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>50</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
+      <Hrutar_Component>4</Hrutar_Component>
+	  <RawMagma>25</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarChainsword</defName>
+    <label>Templar Chainsword</label>
+    <description>Placeholder</description>
+    <soundInteract>Heavy_Chain_Pickup</soundInteract>
+    <meleeHitSound>Heavy_Chain_Hit</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_ChainSword</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarChainsword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>Chainsaw Teeth</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>3.8</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>30</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>130</Hrutar_BlackSteel>
+      <Hrutar_Component>3</Hrutar_Component>
+	  <RawMagma>15</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarHalberd</defName>
+    <label>Templar Halberd</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_Halberd</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarHalberd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.9</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>Spear</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.2</cooldownTime>
+        <armorPenetration>1.4</armorPenetration>
+      </li>
+      <li>
+        <label>Blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.7</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>50</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
+      <Hrutar_Component>1</Hrutar_Component>
+	  <RawMagma>25</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarPowerGauntlet</defName>
+    <label>Templar Power Gauntlet</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <relicChance>3</relicChance>
+	<weaponTags>
+      <li>RAM_PowerFist</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarPowerGauntlet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.7</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, 0.25)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, 0.25)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, 0.25)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, 0.25)</drawOffsetWest>
+    </graphicData>
+		<tools>
+			<li>
+				<label>Fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>1.6</cooldownTime>
+	            <armorPenetration>2</armorPenetration>
+			</li>
+			<li>
+				<label>Breacher Crush</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>125</power>
+				<cooldownTime>5</cooldownTime>
+				<armorPenetration>5</armorPenetration>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.6</ConstructionSpeed>
+			<CarryingCapacity>50</CarryingCapacity>
+		</equippedStatOffsets>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>43</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>190</Hrutar_BlackSteel>
+      <Hrutar_Component>6</Hrutar_Component>
+	  <RawMagma>35</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarPowerSword</defName>
+    <label>Templar Power Sword</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_PS</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarPowerSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>25</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>110</Hrutar_BlackSteel>
+      <Hrutar_Component>2</Hrutar_Component>
+	  <RawMagma>25</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarPowerSwordMarkTwo</defName>
+    <label>Templar Power Sword MK2</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_PS2</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarPowerSwordMark2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>25</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>160</Hrutar_BlackSteel>
+      <Hrutar_Component>4</Hrutar_Component>
+	  <RawMagma>35</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarShortSword</defName>
+    <label>Templar Short Sword</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_ShortSword</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarShortSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>20</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>100</Hrutar_BlackSteel>
+	  <RawMagma>25</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_TemplarWarAxe</defName>
+    <label>Templar War Axe</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_WarAxe</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/TemplarWarAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.9</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>50</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>160</Hrutar_BlackSteel>
+      <Hrutar_Component>2</Hrutar_Component>
+	  <RawMagma>35</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Tool_Axe</defName>
+    <label>Gjallarian Hatchet</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_TemplarTools</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/Tool_Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>80</Hrutar_BlackSteel>
+	  <RawMagma>10</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Tool_Machete</defName>
+    <label>Gjallarian Machete</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_TemplarTools</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/Tool_Machete</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.1</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, 0.25)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, 0.25)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, 0.25)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, 0.25)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>80</Hrutar_BlackSteel>
+	  <RawMagma>10</RawMagma>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>RAM_Tool_PickAxe</defName>
+    <label>Gjallarian PickAxe</label>
+    <description>Placeholder</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>Heavy_Melee</meleeHitSound>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>RAM_TemplarTools</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/Tool_PickAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.1</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	<statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite>HrutarTemplar_AtomicFurnace</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ValiAtomicFurnace</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Hrutar_BlackSteel>80</Hrutar_BlackSteel>
+	  <RawMagma>10</RawMagma>
+    </costList>
+  </ThingDef>
+  
+ <!-- <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>MeleeWeapon_PlasmaSword</defName>
+    <label>plasmasword</label>
+    <description>A metal-cored sword with a cutting edge. Plasma is wrapped around the core, held in place by an energy field. Targets are both sliced by the metal core, as well as burned or ignited by the plasma sheath.</description>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/PlasmaSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>2.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>2.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <def>EMP</def>
+            <amount>9</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>-->
+
+</Defs>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Raw Magma ====================-->
+
+<ThingDef ParentName="ResourceBase">
+    <defName>RawMagma</defName>
+    <label>Molten Magma</label>
+    <description>Magma get from underground brrrtt</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Items/RAWMagmaContainer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <MarketValue>5.3</MarketValue>
+      <Mass>0.5</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!--=============== Gjallarium Ore ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>GjallariumOre</defName>
+    <label>Gjallarium Ore</label>
+    <description>Gjallarium Ore Insert lore here pls wabbit</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Items/Gjallarium_Ore</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <stackLimit>125</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>175</MaxHitPoints>
+      <MarketValue>260</MarketValue>
+      <Mass>1</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+    <!--=============== Nano Fiber ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>HrutarNanoFiber</defName>
+    <label>Hrutarian Nano Fiber</label>
+    <description>Nano Fiber Insert lore here pls wabbit</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Items/Nano_Fiber</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <stackLimit>225</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>9</MarketValue>
+      <Mass>0.038</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <StuffPower_Armor_Sharp>2.00</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.54</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>2.88</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>26</StuffPower_Insulation_Heat>
+    </statBases>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!--=============== Black Steel ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+		<defName>Hrutar_BlackSteel</defName>
+		<label>Hrutarian Black Steel</label>
+		<description>Insert Lore hehe.</description>
+		<graphicData>
+			<texPath>Things/Items/Black_Steel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>375</stackLimit>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>1.9</Mass>
+			<StuffPower_Armor_Sharp>2.16</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.3</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	</ThingDef>
+  
+    <!--=============== Gjallarian Component ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+		<defName>Hrutar_Component</defName>
+		<label>Gjallarian Component</label>
+		<description>Insert Lore hehe.</description>
+		<graphicData>
+			<texPath>Things/Items/GComponent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>350</MarketValue>
+      <Mass>16</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+	</ThingDef>
+	
+</Defs>

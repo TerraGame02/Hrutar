@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+		<defName>Templar_DAI</defName>
+		<label>Templar Data Analyzer AI</label>
+		<description>Data Analyzer AI.</description>
+		<graphicData>
+      <texPath>Things/Building/Assets/DAI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<uiIconScale>0.85</uiIconScale>
+		<researchPrerequisites>
+			<li>ShipComputerCore</li>
+			<li>HrutarTemplarTech</li>
+		</researchPrerequisites>
+		<size>(3,3)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<designationHotKey>Misc4</designationHotKey>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToBuild>25000</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<costList>
+	        <Steel>300</Steel>
+            <Hrutar_BlackSteel>470</Hrutar_BlackSteel>
+            <Hrutar_Component>22</Hrutar_Component>
+			<Gold>70</Gold>
+			<AIPersonaCore>1</AIPersonaCore>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>2500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.5</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>	
+
+</Defs>

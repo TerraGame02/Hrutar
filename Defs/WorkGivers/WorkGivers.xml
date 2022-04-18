@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============= Cooking ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsSynthesizeMeal</defName>
+    <label>Synthesize Meals</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ValiMealMachine</li>
+    </fixedBillGiverDefs>
+    <verb>cook</verb>
+    <gerund>Synthesizing Meals at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+    <!-- ============= Tailor ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsWeaveProduct</defName>
+    <label>Weave Products</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Tailoring</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ValiNanoWeaver</li>
+    </fixedBillGiverDefs>
+    <verb>tailor</verb>
+    <gerund>Weaving at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+    <!-- ============= Smelt Ores ============= -->
+	
+  <WorkGiverDef>
+    <defName>DoBillsSmeltOres</defName>
+    <label>Smelt Ores</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ValiAtomicFurnace</li>
+    </fixedBillGiverDefs>
+    <verb>smith</verb>
+    <gerund>Smithing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+        <!-- ============= Craft Components ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsCraftHrutarComponents</defName>
+    <label>Craft Gjallarian Components</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ValiNanoFabricator</li>
+    </fixedBillGiverDefs>
+    <verb>smith</verb>
+    <gerund>Crafting Gjallarian Components at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+</Defs>

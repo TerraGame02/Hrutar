@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BerserkerUnhappy</defName>
+    <workerClass>ThoughtWorker_IsCarryingRangedWeapon</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RAM_Berserker</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>berserker has ranged weapon</label>
+        <description>I hate shooting from a distance. I want to get up close and personal!</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WitnessedDeathBloodlust</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+    <requiredTraits>
+      <li>RAM_Berserker</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>witnessed death with bloodlust</label>
+        <description>I saw someone die! That was intense!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>KilledHumanlikeBloodlust</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+    <requiredTraits>
+      <li>RAM_Berserker</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>killed someone</label>
+        <description>I killed someone! What a rush!</description>
+        <baseMoodEffect>13</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>KilledHumanlikeHrutar</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+    <requiredTraits>
+      <li>RAM_Hrutar</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Has slain someone</label>
+        <description>You stood in my way, you paid the price.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WitnessedDeathHrutar</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+    <requiredTraits>
+      <li>RAM_Hrutar</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>A Warrior</label>
+        <description>Innocent or not, may your soul rest in peace.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+   <ThoughtDef>
+    <defName>MoodOffsetOptimist</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RAM_UnbreakableWill</li>
+    </requiredTraits>
+    <requiredTraitsDegree>1</requiredTraitsDegree>
+    <stages>
+      <li>
+        <label>Unbreakable Will</label>
+        <description>Natural bonus from 'Unbreakable Will' trait.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+   <ThoughtDef>
+    <defName>MoodOffsetOptimist_SigrunLight</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RAM_Hrutar</li>
+    </requiredTraits>
+    <requiredTraitsDegree>1</requiredTraitsDegree>
+    <stages>
+      <li>
+        <label>Queen's Light</label>
+        <description>Guided by our Queen Sigrun's Light.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+   <ThoughtDef>
+    <defName>MoodOffsetOptimist_Templar</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>RAM_Hrutar</li>
+    </requiredTraits>
+    <requiredTraitsDegree>1</requiredTraitsDegree>
+    <stages>
+      <li>
+        <label>Templar</label>
+        <description>I am the shield of the Imperium, nothing will stand in my way. Not even you.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

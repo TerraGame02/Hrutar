@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>TemplarStart</defName>
+	</ResearchProjectTagDef>
+
+	<ResearchTabDef>
+		<defName>HrutarTemplar_technology</defName>
+		<label>Templar Technology</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>HrutarTemplarTech</defName>
+		<label>Templar Tech.</label>
+		<description>Unlock Hrutar Templar Technology.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>99900</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_AtomicFurnace</defName>
+		<label>Atomic Furnace.</label>
+		<description>Templar Atomic Furnace/Refinery Tech.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>16000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_Bolter</defName>
+		<label>Bolter Tech</label>
+		<description>Fabricate Templar High Caliber Bolter Weaponry.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>20000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_PowerArmor</defName>
+		<label>Sentinel Armor Tech</label>
+		<description>Fabricate Templar Power Armor.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>20000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_PowerTech</defName>
+		<label>Power Tech.</label>
+		<description>Fabricate High Tech Templar Power Generation Technology.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>15000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_ExtractorTech</defName>
+		<label>Adv Extractors.</label>
+		<description>Unlocks Tier 2 Extractors.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>10000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_BastionTech</defName>
+		<label>Bastion Tech</label>
+		<description>Build the Templar's most powerful defenses.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>35000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+			<li>Templar_DAI</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+			<li>ShipComputerCore</li>
+		</prerequisites>		
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_JudgementTech</defName>
+		<label>Judgement SuperWeapons</label>
+		<description>Build the Templar's most powerful defenses.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>55000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+			<li>Templar_DAI</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+			<li>ShipComputerCore</li>
+			<li>HrutarTemplar_BastionTech</li>
+		</prerequisites>		
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>	
+
+</Defs>

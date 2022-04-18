@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>MetalsExtractorTierOne</defName>
+    <label>Metal Extractor Tier One</label>
+    <description>Drills through deep beneath the planet to harvest and process it's Minerals and refine it into Gjallarian Ore.</description>
+    <graphicData>
+      <texPath>Things/Building/Assets/T1_DeepDriller</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+	  <Steel>95</Steel>
+      <Hrutar_BlackSteel>50</Hrutar_BlackSteel>
+      <Hrutar_Component>3</Hrutar_Component>
+    </costList>
+    <researchPrerequisites>
+	  <li>HrutarTemplarTech</li>
+	</researchPrerequisites>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>GjallariumOre</thingToSpawn>
+        <spawnCount>4</spawnCount>
+        <spawnIntervalRange><min>55000</min><max>55000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>8</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>2500</WorkToBuild>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <tickerType>Normal</tickerType>
+    <size>(2, 3)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<designationCategory>Production</designationCategory>
+  </ThingDef>
+   
+  <ThingDef ParentName="BuildingBase">
+    <defName>MetalsExtractorTierTwo</defName>
+    <label>Metal Extractor Tier Two</label>
+    <description>Drills through deep beneath the planet to harvest and process it's Minerals and refine it into Gjallarian Ore.</description>
+    <graphicData>
+      <texPath>Things/Building/Assets/T2_DeepDriller</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+	  <Steel>125</Steel>
+      <Hrutar_BlackSteel>75</Hrutar_BlackSteel>
+      <Hrutar_Component>6</Hrutar_Component>
+    </costList>
+    <researchPrerequisites>
+	  <li>HrutarTemplarTech</li>
+	  <li>HrutarTemplar_ExtractorTech</li>
+	</researchPrerequisites>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1700</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>GjallariumOre</thingToSpawn>
+        <spawnCount>16</spawnCount>
+        <spawnIntervalRange><min>75000</min><max>75000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>8</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>3500</WorkToBuild>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <tickerType>Normal</tickerType>
+    <size>(3, 3)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<designationCategory>Production</designationCategory>
+  </ThingDef>
+
+</Defs>

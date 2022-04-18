@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.BackstoryDef Abstract="True" Name="Ram_Base">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		 <relationSettings>
+            <relationChanceModifierLover>0</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <renamer>
+               <li>
+                  <relation>Parent</relation>
+                  <label>AlienFather</label>
+                  <femaleLabel>AlienMother</femaleLabel>
+               </li>
+            </renamer>
+        </relationSettings>
+		<forcedHediffs>
+		</forcedHediffs> 		
+	</AlienRace.BackstoryDef>
+	
+	<!-- Start Here -->
+	
+	<!-- Childhood -->
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Half_Breed</defName>
+		<title>half-breed</title>
+		<titleShort>half-breed</titleShort>
+		<baseDescription>{PAWN_nameDef} has lived a traumatic life. Due to being a half breed, pure blooded Hrutarians see {PAWN_nameDef} as less than a speck of dirt. Near fatal levels of beatings, insults suggesting they should die and far worse, are only some of the things that {PAWN_nameDef} has to deal with, when genetically superior Hrutarioans get hold of them.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Ram_Backstory</li>
+		</spawnCategories>
+		<femaleCommonality>60</femaleCommonality>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>60</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Gene_Seed</defName>
+		<title>Perfected Gene Clone</title>
+		<titleShort>gene-clone</titleShort>
+		<baseDescription>{PAWN_nameDef} is a clone of a long forgotten warrior who was said to be the pinnacle that all Hrutarians should strive towards.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>	
+		</skillGains>
+		<spawnCategories>
+		    <li>RAM_GeneCode</li>
+			<li>Ram_Backstory</li>
+		</spawnCategories>
+		<femaleCommonality>60</femaleCommonality>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_GeneCode</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Battle_Born</defName>
+		<title>battle born</title>
+		<titleShort>battle born</titleShort>
+		<baseDescription>{PAWN_nameDef} has only know war, violence and death for as long as she can remember. {PAWN_pronoun}'s earliest memories are of fleeing a burning home while enemies slaughtered their family. Vows of vengence can only take you so far, when war is all you need in your life.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Ram_Backstory</li>
+		</spawnCategories>
+		<femaleCommonality>60</femaleCommonality>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_War_Orphan</defName>
+		<title>war orphan</title>
+		<titleShort>orphan</titleShort>
+		<baseDescription>{PAWN_nameDef} is the sole survivor of their family. Enemies of the empire destroyed their homeland and left them a a cynic and a loner. Slow to talk and slower to trust, {PAWN_nameDef} honed her combat skills lest the same thing happen twice.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-4</amount>
+			</li>	
+		</skillGains>	
+		<femaleCommonality>60</femaleCommonality>	
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_LostSoul</defName>
+				<chance>900</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Young_Psionic</defName>
+		<title>young psionic</title>
+		<titleShort>psionic</titleShort>
+		<baseDescription>From an early age, {PAWN_nameDef} showed promise of latent psionic and void abilities. Growing up being taught about the wonder that pyschic abilites can achieve, {PAWN_nameDef} promised to become the greatest Psion in the empire.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>	
+			<li>
+				<defName>Intellectual</defName>
+				<amount>3</amount>
+			</li>	
+		</skillGains>	
+		<femaleCommonality>60</femaleCommonality>	
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_LostSoul</defName>
+				<chance>80</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Young_Noble</defName>
+		<title>young noble</title>
+		<titleShort>noble</titleShort>
+		<baseDescription>{PAWN_nameDef} recieved the best equcation that money could buy, however, this education was lesson about combat and war that the Hrutarian empire was famous for, and more on the history, etiquette and more general skills required by those of nobility.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>		
+		<femaleCommonality>60</femaleCommonality>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Medical_Apprentice</defName>
+		<title>medical apprentice</title>
+		<titleShort>nurse</titleShort>
+		<baseDescription>{PAWN_nameDef}'s homeworld was one steeped in more violence than usual for those in the hrutarian empire. When a passing doctor noticed how {PAWN_nameDef} cared for the injured, they decided to take {PAWN_nameDef} on as an apprentice.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<femaleCommonality>60</femaleCommonality>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Researcher_Apprentice</defName>
+		<title>researcher apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<baseDescription>{PAWN_nameDef} was always said to be gifted or a genius, that was never clearer than when a renowed researcher of the empire took {PAWN_nameDef} as their apprentice to study the secrets of the universe.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<femaleCommonality>60</femaleCommonality>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Trained_Jeager</defName>
+		<title>trained jeager</title>
+		<titleShort>jeager</titleShort>
+		<baseDescription>{PAWN_nameDef} has always had a propensity towards comabt and war. When the empire needed young volunteers to train and send into battle against bigger threats from the void, {PAWN_nameDef} was one of the first volunteers.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<femaleCommonality>60</femaleCommonality>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_Jeager</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Farming_Planet</defName>
+		<title>farming planet</title>
+		<titleShort>farmer</titleShort>
+		<baseDescription>{PAWN_nameDef} was taken from a agriculture focused planet.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>	
+		<femaleCommonality>60</femaleCommonality>	
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Industrial_Planet</defName>
+		<title>industrial planet</title>
+		<titleShort>industrial</titleShort>
+		<baseDescription>{PAWN_nameDef} was taken from a industrial focused planet.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>	
+		<femaleCommonality>60</femaleCommonality>	
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Natural_Born</defName>
+		<title>natural born</title>
+		<titleShort>natural born</titleShort>
+		<baseDescription>{PAWN_nameDef} was born through natural means, a rarity to be sure but not unheard of in the empire. However, immediately after birth, {PAWN_nameDef}  was taken away to be trained for war.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>	
+		<femaleCommonality>40</femaleCommonality>	
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_NaturalBirth</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Hrutarian_Psionic</defName>
+		<title>hrutarian psionic</title>
+		<titleShort>psionic</titleShort>
+		<baseDescription>{PAWN_nameDef} was born with incredible psionic potential, as such, it was only natural that they would become part of the empires renowed war caster units to fight threats from the void.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>	
+		<femaleCommonality>40</femaleCommonality>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_GiftedPsyker</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Hrutarian_Artist</defName>
+		<title>hrutarian artist</title>
+		<titleShort>artist</titleShort>
+		<baseDescription>{PAWN_nameDef} is one of the few in the empire permitted to find beauty between the constant violence of the empire, embrace it and turn it into works of art.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>		
+		<femaleCommonality>40</femaleCommonality>	
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<disallowedTraits>
+        </disallowedTraits>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_InspiredArtist</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Hrutarian_Singer</defName>
+		<title>hrutarian singer</title>
+		<titleShort>singer</titleShort>
+		<baseDescription>{PAWN_nameDef} has a path that differs from most of the empire, finding strength of voice instead of combat strength, finding expression in art and music, rather than expressions of violence. </baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>9</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>	
+		<femaleCommonality>40</femaleCommonality>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_GiftedSinger</defName>
+				<chance>40</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Valkyrie_Daughter</defName>
+		<title>valkyrie daughter</title>
+		<titleShort>valkyrie daughter</titleShort>
+		<baseDescription>{PAWN_nameDef} was born in an affluent family and was provided with the best education and living conditions. However, the excessive love {PAWN_pronoun} received have made {PAWN_objective} a domineering child. </baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>	
+		<femaleCommonality>20</femaleCommonality>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Hrutar</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>RAM_Young_Valkyrie</defName>
+				<chance>80</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<!-- Adulthood -->
+
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Gjallarhorn_Agriculturist</defName>
+		<title>gjallarhorn agriculturist</title>
+		<titleShort>agriculturist</titleShort>
+		<baseDescription>{PAWN_nameDef} is the unseen fighter of the empire, the one staving off the hunger of the soldiers, rather than the enemies to the front. </baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Agronomist</defName>
+				<chance>25</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Hrutarian_Tamer</defName>
+		<title>hrutarian tamer</title>
+		<titleShort>tamer</titleShort>
+		<baseDescription>{PAWN_nameDef} is a skilled animal handler and menagerie owner, the Queen often ask for their assistance in procurring beasts of burden and animals of war.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>4</amount>
+			</li>		
+		</skillGains>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Fauna_Master</defName>
+				<chance>25</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Gjallarhorn_Manufacturer</defName>
+		<title>gjallarhorn manufacturer</title>
+		<titleShort>manufacturer</titleShort>
+		<baseDescription>{PAWN_nameDef} works on the fields of steel, as a talented manufacture of goods and arms for the empire.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>		
+		</skillGains>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_CraftersVirtue</defName>
+				<chance>25</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Gjallarhorn_Doctor</defName>
+		<title>gjallarhorn doctor</title>
+		<titleShort>doctor</titleShort>
+		<baseDescription>{PAWN_nameDef} is a renowned doctor of the empire, even when medical technology has surpassed what most doctors can do, {PAWN_nameDef} still continues to be one of the best.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>		
+		</skillGains>
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Saviour</defName>
+				<chance>10</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Gjallarhorn_Researcher</defName>
+		<title>gjallarhorn researcher</title>
+		<titleShort>researcher</titleShort>
+		<baseDescription>{PAWN_nameDef} is the intellectual who helps keep the empire ahead of the curve and one step in front of their enemies with new technology.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>8</amount>
+			</li>		
+		</skillGains>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Asteroid_Miner</defName>
+		<title>asteroid miner</title>
+		<titleShort>miner</titleShort>
+		<baseDescription>When most planets are devoid of most of their resources, empire must find new ways to keep their armies supplied. as such, space holds answers for this in terms of resource rich asteroids, and {PAWN_nameDef} is one of the best asteroid miners in the empire.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Mining</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Battle_Medic</defName>
+		<title>battle medic</title>
+		<titleShort>battle medic</titleShort>
+		<baseDescription>When doctors are too far away in populated cities to help your comrades in arms with their wounds, people like {PAWN_nameDef} are there to help, battle medics are the saviors of those on the frontlines who cant get to the doctors too far away to help. </baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>		
+		<spawnCategories>
+			<li>Ram_Base</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Vestal</defName>
+				<chance>10</chance>
+			</li>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Gjallarhorn_Soldier</defName>
+		<title>gjallarhorn soldier</title>
+		<titleShort>soldier</titleShort>
+		<baseDescription>{PAWN_nameDef} is the shield that protects the queen. {PAWN_nameDef} is the sword that strikes down those that would stand before the queen. </baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RAM_Templar_Soldier</li>
+		</spawnCategories>
+		<forcedTraits>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Templar_Guardian</defName>
+		<title>Templar Guardian</title>
+		<titleShort>soldier</titleShort>
+		<baseDescription>{PAWN_nameDef} is the bastion of her templar sisters. {PAWN_nameDef} is the unbreakable will of the Leivateinn Templars. </baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Templar_Guardian</li>
+		</spawnCategories>
+		<forcedTraits>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+
+</Defs>	

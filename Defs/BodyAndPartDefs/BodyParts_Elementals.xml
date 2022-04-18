@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--======== Common to various mechanoids ========-->
+
+  <BodyPartDef>
+    <defName>VoidMechanicalNeck</defName>
+    <label>neck</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalHead</defName>
+    <label>head</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ArtificialVoidBrain</defName>
+    <label>artificial brain</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidReactor</defName>
+    <label>reactor</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidFluidReprocessor</defName>
+    <label>fluid reprocessor</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BloodFiltrationSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidSightSensor</defName>
+    <label>visual sensor</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <socketed>true</socketed>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidHearingSensor</defName>
+    <label>sound sensor</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidSmellSensor</defName>
+    <label>chemical analyzer</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalShoulder</defName>
+    <label>shoulder</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalArm</defName>
+    <label>arm</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidShieldArm</defName>
+    <label>arm</label>
+    <hitPoints>90</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalHand</defName>
+    <label>hand</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalFinger</defName>
+    <label>finger</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalLeg</defName>
+    <label>leg</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>VoidMechanicalFoot</defName>
+    <label>foot</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <!--===================== Human-like specific (lancer, scyther) ====================-->
+
+  <BodyPartDef Name="MechanicalThorax">
+    <defName>VoidMechanicalThorax</defName>
+    <label>thorax</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalThorax">
+    <defName>VoidMechanicalThoraxCanManipulate</defName>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <!--===================== Scyther specific ====================-->
+
+  <BodyPartDef>
+    <defName>VoidBlade</defName>
+    <label>blade</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <!--===================== Centipede specific ====================
+  
+  <BodyPartDef Abstract="True" Name="MechanicalCentipedeRingBase">
+    <labelShort>body ring</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>MechanicalCentipedeBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>45</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>MechanicalCentipedeBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>MechanicalCentipedeBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>MechanicalCentipedeBodyFourthRing</defName>
+    <label>fourth body ring</label>
+    <hitPoints>30</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>MechanicalCentipedeBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>25</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalCentipedeRingBase">
+    <defName>MechanicalCentipedeBodySixthRing</defName>
+    <label>sixth body ring</label>
+    <hitPoints>20</hitPoints>
+  </BodyPartDef>-->
+  
+</Defs>

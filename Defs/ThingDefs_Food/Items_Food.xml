@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!-- ============= Meal Pack ============= -->
+
+   <ThingDef Name="MealBase" ParentName="MealBaseIngredientless" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Ingredients" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>RAM_MealPack</defName>
+    <label>Hrutarian Meal Pack</label>
+    <description>A high-quality and quantity packaged meal, manufactured for use in Hrutarian Military Rations. Great for traveling. its warm when you open it!.</description>
+    <graphicData>
+      <texPath>Things/Items/MealPack_1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>90</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+	  <tasteThought>AteLavishMeal</tasteThought>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+</Defs>

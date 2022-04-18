@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef ParentName="BluntBase">
+		<defName>Headbutt</defName>
+		<label>headbutt</label>
+	</DamageDef>
+</Defs>

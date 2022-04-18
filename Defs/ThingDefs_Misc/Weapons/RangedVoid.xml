@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Void Lancer Gun-->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Lancer</defName>
+    <label>lancer gun</label>
+    <description>A long-range weapon used by mechanoids. Named after its needle-like projectiles, it fires single shots with great accuracy. While it does less damage than charge weapons, it can reach over very long distances.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/VoidElementals/V_Lancer_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>VoidGunMedium</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Lancer</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>35</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Lancer</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Lancer</defName>
+    <label>needle shot</label>
+    <graphicData>
+      <texPath>Bullets/VoidLancer_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Void Marauder Gun-->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Marauder</defName>
+    <label>marauder gun</label>
+    <description>A long-range weapon used by mechanoids. Named after its needle-like projectiles, it fires single shots with great accuracy. While it does less damage than charge weapons, it can reach over very long distances.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/VoidElementals/V_Marauder_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>VoidGunHeavy</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Marauder</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>45</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>30</burstShotCount>
+        <soundCast>Shot_Marauder</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Marauder</defName>
+    <label>needle shot</label>
+    <graphicData>
+      <texPath>Bullets/VoidMarauder_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Void Stalker Gun-->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_Stalker</defName>
+    <label>stalker gun</label>
+    <description>A long-range weapon used by mechanoids. Named after its needle-like projectiles, it fires single shots with great accuracy. While it does less damage than charge weapons, it can reach over very long distances.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/VoidElementals/V_Stalker_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>4</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, 1.5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, 1.5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, 1.5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, 1.5)</drawOffsetWest>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>VoidGunLong</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Stalker</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>55</range>
+        <soundCast>Shot_Stalker</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Stalker</defName>
+    <label>needle shot</label>
+    <graphicData>
+      <texPath>Bullets/VoidStalker_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>4</drawSize>
+      <drawOffsetSouth>(0.0, 0.0, 1.5)</drawOffsetSouth>
+      <drawOffsetNorth>(0.0, 0.0, 1.5)</drawOffsetNorth>
+      <drawOffsetEast>(0.0, 0.0, 1.5)</drawOffsetEast>
+      <drawOffsetWest>(0.0, 0.0, 1.5)</drawOffsetWest>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>1.55</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

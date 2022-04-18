@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowGuestExecuted"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowGuestExecuted"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowColonistExecuted"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowColonistExecuted"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowPrisonerDiedInnocent"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowPrisonerDiedInnocent"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowColonistDied"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowColonistDied"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="PawnWithGoodOpinionDied"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="PawnWithGoodOpinionDied"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="Chitchat"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="Chitchat"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="DeepTalk"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="DeepTalk"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ColonistLeftUnburied"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ColonistLeftUnburied"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowPrisonerSold"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowPrisonerSold"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ReleasedHealthyPrisoner"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ReleasedHealthyPrisoner"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowGuestOrganHarvested"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowGuestOrganHarvested"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowColonistOrganHarvested"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowColonistOrganHarvested"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="Nuzzled"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="Nuzzled"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHumanlikeCorpse"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ObservedLayingCorpse"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="WitnessedDeathAlly"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="WitnessedDeathAlly"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="WitnessedDeathNonAlly"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="WitnessedDeathNonAlly"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="WitnessedDeathFamily"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="WitnessedDeathFamily"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>Ram_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="DeniedJoining"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="DeniedJoining"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ColonistBanished"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ColonistBanished"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ColonistLeftUnburied"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ColonistLeftUnburied"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ColonistBanishedToDie"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ColonistBanishedToDie"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="PrisonerBanishedToDie"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="PrisonerBanishedToDie"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="ColonyPrisonerEscaped"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ColonyPrisonerEscaped"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+    
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="BondedAnimalBanished"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="BondedAnimalBanished"]</xpath>
+				<value>
+					<nullifyingTraits>
+					    <li>RAM_Hrutar</li>
+						<li>RAM_LostSoul</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

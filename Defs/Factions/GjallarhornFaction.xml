@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>GjallarhornFaction</defName>
+    <label>Leivateinn Templars</label>
+		<description>granite and slate chunks come to life. Limestone is ok.</description>
+		<pawnSingular>Gjallarhorn</pawnSingular>
+    <pawnsPlural>Templar</pawnsPlural>
+    <categoryTag>Ancient</categoryTag>
+    <fixedName>Templars</fixedName>
+    <leaderTitle>Warmaster</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <canSiege>true</canSiege>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <settlementTexturePath>World/MOTH</settlementTexturePath>
+    <factionIconPath>World/MOTH</factionIconPath>
+    <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Ram_Base</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedCultures>
+  	  <li>RamGjallarhorn</li>
+	  </allowedCultures>
+    <colorSpectrum>
+      <li>(0.44, 0.41, 0.32)</li>
+      <li>(0.61, 0.58, 0.49)</li>
+      <li>(0.60, 0.49, 0.36)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>Ram_SentinelDefender</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_TemplarCivil_Standard</li>
+    </baseTraderKinds>
+    <caravanTraderKinds>
+      <li>Caravan_TemplarCivil_Exotic</li>
+      <li>Caravan_TemplarCivil_CombatSupplier</li>
+      <li>Caravan_TemplarCivil_BulkGoods</li>
+    </caravanTraderKinds>
+    <allowedArrivalTemperatureRange>
+			<min>-900</min>
+			<max>900</max>
+		</allowedArrivalTemperatureRange>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+      <raidCommonalityFromPointsCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(70, 50)</li>
+          <li>(800, 100)</li>
+          <li>(1300, 150)</li>
+          <li>(100000, 10000)</li>
+        </points>
+      </raidCommonalityFromPointsCurve>
+      <maxPawnCostPerTotalPointsCurve>
+        <points>
+          <li>(0,35)</li>
+          <li>(70, 50)</li>
+          <li>(700, 100)</li>
+          <li>(1300, 150)</li>
+          <li>(100000, 10000)</li>
+        </points>
+      </maxPawnCostPerTotalPointsCurve>
+      <pawnGroupMakers>
+        <li>
+          <!-- Normal fights, Templar Battalion -->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <Ram_TraderGuardMelee>15</Ram_TraderGuardMelee>
+            <Ram_SentinelMelee>10</Ram_SentinelMelee>
+            <Ram_SentinelMarine>10</Ram_SentinelMarine>
+            <Ram_SentinelSpectre>1</Ram_SentinelSpectre>
+            <Ram_SentinelDefender>1</Ram_SentinelDefender>
+            <Ram_SentinelDevastator>5</Ram_SentinelDevastator>
+          </options>
+        </li>
+        <li>
+          <!-- Normal fights, Valkyrie Battalion -->
+          <kindDef>Combat</kindDef>
+          <commonality>80</commonality>
+          <options>
+            <Ram_TraderGuardMelee>15</Ram_TraderGuardMelee>
+            <Ram_SentinelMelee>10</Ram_SentinelMelee>
+            <Ram_SentinelMarine>10</Ram_SentinelMarine>
+            <Ram_SentinelSpectre>1</Ram_SentinelSpectre>
+            <Ram_SentinelDefender>1</Ram_SentinelDefender>
+            <Ram_SentinelDevastator>5</Ram_SentinelDevastator>
+          </options>
+        </li>
+        <li>
+          <!-- Base defense, mainly ranged with melee mix-ins -->
+          <kindDef>Settlement</kindDef>
+          <options>
+            <Ram_Templar>20</Ram_Templar>
+            <Ram_Trader>15</Ram_Trader>
+            <Ram_TraderGuardMelee>10</Ram_TraderGuardMelee>
+            <Ram_TraderGuard>10</Ram_TraderGuard>
+          </options>
+        </li>
+        <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Ram_Trader>20</Ram_Trader>
+          <Ram_TraderGuard>10</Ram_TraderGuard>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Ram_Trader>10</Ram_Trader>
+          <Ram_TraderGuard>2</Ram_TraderGuard>
+          <Ram_TraderGuardMelee>4</Ram_TraderGuardMelee>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+        </carriers>
+        <guards>
+          <Ram_Trader>10</Ram_Trader>
+          <Ram_TraderGuard>4</Ram_TraderGuard>
+          <Ram_TraderGuardMelee>2</Ram_TraderGuardMelee>
+        </guards>
+      </li>
+    </pawnGroupMakers>
+      <humanlikeFaction>true</humanlikeFaction>
+      <hidden>false</hidden>
+      <autoFlee>false</autoFlee>
+      <canUseAvoidGrid>false</canUseAvoidGrid>
+      <permanentEnemy>false</permanentEnemy>
+      <configurationListOrderPriority>90</configurationListOrderPriority>
+	</FactionDef>
+	  
+	
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=================================== Nano Fiber ==========================================-->
+
+  <RecipeDef>
+    <defName>WeaveNanoFibers</defName>
+    <label>Weaving Nano Fibers</label>
+    <description>Weave nano fibers, the strongest fiber known in hrutarian technology.</description>
+    <jobString>Weaving Nano Fibers.</jobString>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hrutar_BlackSteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>			
+   </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hrutar_BlackSteel</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <products>
+      <HrutarNanoFiber>75</HrutarNanoFiber>
+    </products>
+  </RecipeDef>
+</Defs>

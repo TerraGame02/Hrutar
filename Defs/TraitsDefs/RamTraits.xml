@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Common -->
+  <TraitDef>
+    <defName>RAM_Hrutar</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>Hrutar</label>
+        <description>Hrutarians are crafted super species for war from a young age, many long hours of combat drills, emergency construction, battlefield medic training and a plethora of other skills deemed vital for winning wars are so ingrained into their society that children barely able to crawl are taught how to do things even if they don't understand what its for.</description>
+        <statOffsets>
+		  <RestRateMultiplier>1</RestRateMultiplier>
+          <PawnBeauty>2</PawnBeauty>
+          <MoveSpeed>1.5</MoveSpeed>
+          <MentalBreakThreshold>1.60</MentalBreakThreshold>
+          <PainShockThreshold>+0.6</PainShockThreshold>
+          <PsychicSensitivity>0.05</PsychicSensitivity>
+		  <CarryingCapacity>165</CarryingCapacity>
+          <GlobalLearningFactor>+0.60</GlobalLearningFactor>
+          <SocialImpact>0.5</SocialImpact>
+          <ImmunityGainSpeed>0.9</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+          <MeleeArmorPenetration>0.4</MeleeArmorPenetration> 
+        </statOffsets>
+		<statFactors>
+				<PawnBeauty>3</PawnBeauty>
+				<CarryingCapacity>6</CarryingCapacity>
+				<RestRateMultiplier>0.5</RestRateMultiplier>
+				<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.9</ArmorRating_Heat>
+				<ConstructionSpeed>0.9</ConstructionSpeed>
+				<MeleeHitChance>0.8</MeleeHitChance>
+				<ConstructSuccessChance>1</ConstructSuccessChance>
+				<MeleeDodgeChance>0.5</MeleeDodgeChance>				
+	    </statFactors>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>5</value></li>
+          <li>
+            <key>Melee</key><value>5</value>
+          </li>
+          <li>
+            <key>Animals</key><value>5</value>
+          </li>
+          <li>
+            <key>Construction</key><value>5</value>
+          </li>
+          <li>
+            <key>Plants</key><value>5</value>
+          </li>
+          <li>
+            <key>Social</key><value>4</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>4</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Tomboy</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>Tomboy</label>
+        <description>[PAWN_nameDef] was the youngest member of her household, a household filled with military personnel. Even when she didnt realise it, she was already doing things far above what she should be learning for war.</description>
+        <statOffsets>
+          <PawnBeauty>+1</PawnBeauty>
+          <CarryingCapacity>+90</CarryingCapacity>
+          <ConstructionSpeed>+0.1</ConstructionSpeed>
+          <MoveSpeed>1</MoveSpeed>
+          <MeleeHitChance>+5</MeleeHitChance>
+          <MeleeDodgeChance>+5</MeleeDodgeChance>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>4</value>
+          </li>
+          <li>
+            <key>Melee</key><value>4</value>
+          </li>
+          <li>
+            <key>Construction</key><value>3</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Agronomist</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Agronomist</label>
+        <description>[PAWN_nameDef] is part of the unseen fighters, keeping their sisters alive and well feed.</description>
+        <statOffsets>
+          <PlantWorkSpeed>+0.2</PlantWorkSpeed>
+          <PlantHarvestYield>+0.5</PlantHarvestYield>
+          <CarryingCapacity>+50</CarryingCapacity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Plants</key><value>4</value>
+          </li>
+          <li>
+            <key>Animals</key><value>2</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Fauna_Master</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Fauna Master</label>
+        <description>[PAWN_nameDef] is one of the militaries trained animal handlers. They raise animals to help their Hrutarian sisters in war.</description>
+        <statOffsets>
+          <AnimalGatherSpeed>+0.3</AnimalGatherSpeed>
+          <AnimalGatherYield>+0.5</AnimalGatherYield>
+          <TameAnimalChance>+0.4</TameAnimalChance>
+				  <TrainAnimalChance>+0.5</TrainAnimalChance>
+          <CarryingCapacity>+50</CarryingCapacity>
+          <HuntingStealth>+0.4</HuntingStealth>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Plants</key><value>2</value>
+          </li>
+          <li>
+            <key>Animals</key><value>4</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_GeneCode</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Gene-Code</label>
+        <description>[PAWN_nameDef] is a Gene-Code.</description>
+        <statOffsets>
+          <MoveSpeed>1</MoveSpeed>
+          <MeleeArmorPenetration>.1</MeleeArmorPenetration>
+          <MeleeHitChance>0.15</MeleeHitChance>
+          <MeleeDodgeChance>0.15</MeleeDodgeChance>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.15</ArmorRating_Heat>
+          <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+          <ConstructionSpeed>+0.25</ConstructionSpeed>
+          <CarryingCapacity>+100</CarryingCapacity>
+          <PsychicSensitivity>0.1</PsychicSensitivity>
+          <PawnBeauty>+2</PawnBeauty>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>5</value>
+          </li>
+          <li>
+            <key>Melee</key><value>5</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Young_Psyker</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Young Psyker</label>
+        <description>[PAWN_nameDef] is a young psyker.</description>
+        <statOffsets>
+          <MoveSpeed>0.25</MoveSpeed>
+          <PsychicSensitivity>0.25</PsychicSensitivity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>2</value>
+          </li>
+          <li>
+            <key>Melee</key><value>2</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Jeager</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Jeager</label>
+        <description>[PAWN_nameDef] is a jeager.</description>
+        <statOffsets>
+          <MoveSpeed>1.5</MoveSpeed>
+          <HuntingStealth>.25</HuntingStealth>
+          <MeleeArmorPenetration>.08</MeleeArmorPenetration>
+          <MeleeHitChance>.30</MeleeHitChance>
+          <MeleeDodgeChance>.25</MeleeDodgeChance>
+          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.1</ArmorRating_Heat>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+          <CarryingCapacity>+50</CarryingCapacity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>3</value>
+          </li>
+          <li>
+            <key>Melee</key><value>4</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!-- Uncommon -->
+
+  <TraitDef>
+    <defName>RAM_NaturalBirth</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Natural Birth</label>
+        <description>[PAWN_nameDef] came from a natural birth.</description>
+        <statOffsets>
+          <MoveSpeed>1.25</MoveSpeed>
+          <MeleeArmorPenetration>.15</MeleeArmorPenetration>
+          <MeleeHitChance>.30</MeleeHitChance>
+          <MeleeDodgeChance>.25</MeleeDodgeChance>
+          <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.2</ArmorRating_Heat>
+          <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+          <CarryingCapacity>+75</CarryingCapacity>
+          <PsychicSensitivity>0.15</PsychicSensitivity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>6</value>
+          </li>
+          <li>
+            <key>Melee</key><value>6</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_InspiredArtist</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Inspired Artist</label>
+        <description>Placeholder</description>
+        <skillGains>
+          <li>
+            <key>Artistic</key><value>8</value>
+          </li>
+          <li>
+            <key>Social</key><value>2</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_GiftedPsyker</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Gifted Psyker</label>
+        <description>Placeholder</description>
+        <statOffsets>
+          <MeleeDodgeChance>.35</MeleeDodgeChance>
+          <PsychicSensitivity>0.50</PsychicSensitivity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>3</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>4</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_GiftedSinger</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Gifted Singer</label>
+        <description>Placeholder</description>
+        <statOffsets>
+          <SocialImpact>.7</SocialImpact>
+          <NegotiationAbility>0.80</NegotiationAbility>
+          <TradePriceImprovement>0.40</TradePriceImprovement>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Social</key><value>8</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_CraftersVirtue</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Crafter's Virtue</label>
+        <description>Placeholder</description>
+        <statOffsets>
+          <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+          <FixBrokenDownBuildingSuccessChance>0.5</FixBrokenDownBuildingSuccessChance>
+          <ButcheryMechanoidSpeed>0.5</ButcheryMechanoidSpeed>
+          <ButcheryMechanoidEfficiency>0.6</ButcheryMechanoidEfficiency>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Crafting</key><value>9</value>
+          </li>
+          <li>
+            <key>Artistic</key><value>2</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>4</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Saviour</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Saviour</label>
+        <description>Placeholder</description>
+        <statOffsets>
+          <MedicalOperationSpeed>0.50</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
+          <MedicalTendQuality>0.5</MedicalTendQuality>
+          <MedicalTendSpeed>0.6</MedicalTendSpeed>
+          <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Medicine</key><value>8</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>3</value>
+          </li>
+          <li>
+            <key>Social</key><value>4</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_PresenceOfMind</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Presence of Mind</label>
+        <description>[PAWN_nameDef] is part of the rare group of Hrutarians who have been trained to stay out of war and have absolute focus, and advance their race as a whole.</description>
+        <statOffsets>
+          <MeleeDodgeChance>0.35</MeleeDodgeChance>
+          <ResearchSpeed>1</ResearchSpeed>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Intellectual</key><value>8</value>
+          </li>
+          <li>
+            <key>Social</key><value>6</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_CrystalizedSkin</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Crystalized Skin</label>
+        <description>[PAWN_nameDef] has undergone crystal enhancement and come out of the experiments with natural body armor.</description>
+        <statOffsets>
+          <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.75</ArmorRating_Heat>
+          <MoveSpeed>1.5</MoveSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Deadeye</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Deadeye</label>
+        <description>Long hours of weapons drills have left [PAWN_nameDef] with near deadshot levels of accuracy.</description>
+        <statOffsets>
+          <AimingDelayFactor>0.20</AimingDelayFactor>
+          <ShootingAccuracyPawn>0.60</ShootingAccuracyPawn>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>6</value>
+          </li>
+          <li>
+            <key>Animals</key><value>3</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Akimbo</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Akimbo</label>
+        <description>[PAWN_nameDef] has trained in the art of using guns in both hands and has come out able to aim faster and better.</description>
+        <statOffsets>
+          <AimingDelayFactor>-0.20</AimingDelayFactor>
+          <ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>6</value>
+          </li>
+          <li>
+            <key>Animals</key><value>3</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_UnbreakableWill</defName>
+    <commonality>0.35</commonality>
+    <degreeDatas>
+      <li>
+        <label>Unbreakable Will</label>
+        <description>[PAWN_nameDef] underwent experimentation that would have broken a normal person. though the experiments saw minor success, [PAWN_nameDef] came out with a fortress for a mind aswell.</description>
+        <statOffsets>
+          <PainShockThreshold>1</PainShockThreshold>
+          <MentalBreakThreshold>1.60</MentalBreakThreshold>
+          <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.2</ArmorRating_Heat>
+          <PsychicSensitivity>0.1</PsychicSensitivity>
+        </statOffsets>
+        <!--20 mood buff gotta c# the code junk-->
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_LostSoul</defName>
+    <commonality>0.40</commonality>
+    <degreeDatas>
+      <li>
+        <label>Lost Soul</label>
+        <description>[PAWN_nameDef] is a broken person, they no longer feel much, as such they wander through life, awaiting the end.</description>
+        <!-- Basically psychopath -->
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!-- Rare -->
+
+  <TraitDef>
+    <defName>RAM_Young_Valkyrie</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Young valkyrie</label>
+        <description>[PAWN_nameDef] was born with visible prowess and skills of a valkyrie.</description>
+        <statOffsets>
+          <PawnBeauty>+1</PawnBeauty>
+          <CarryingCapacity>+60</CarryingCapacity>
+          <ArmorRating_Sharp>+0.15</ArmorRating_Sharp>
+          <ArmorRating_Blunt>+0.15</ArmorRating_Blunt>
+          <ArmorRating_Heat>+0.15</ArmorRating_Heat>
+          <MoveSpeed>1.25</MoveSpeed>
+          <MeleeDodgeChance>25</MeleeDodgeChance>
+          <MeleeHitChance>+35</MeleeHitChance>
+          <MeleeArmorPenetration>.15</MeleeArmorPenetration>
+          <PsychicSensitivity>0.10</PsychicSensitivity>
+          <PawnBeauty>+1</PawnBeauty>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>6</value>
+          </li>
+          <li>
+            <key>Melee</key><value>6</value>
+          </li>
+          <li>
+            <key>Social</key><value>3</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Squad_Captain</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Squad captain</label>
+        <description>[PAWN_nameDef] was more capable than her sisters of battle.</description>
+        <statOffsets>     
+          <MoveSpeed>1.25</MoveSpeed>
+          <MeleeArmorPenetration>.15</MeleeArmorPenetration>
+          <MeleeHitChance>+30</MeleeHitChance>
+          <MeleeDodgeChance>25</MeleeDodgeChance>
+          <ArmorRating_Sharp>+0.2</ArmorRating_Sharp>
+          <ArmorRating_Blunt>+0.2</ArmorRating_Blunt>
+          <ArmorRating_Heat>+0.2</ArmorRating_Heat>
+          <CarryingCapacity>+110</CarryingCapacity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>6</value>
+          </li>
+          <li>
+            <key>Melee</key><value>6</value>
+          </li>
+          <li>
+            <key>Social</key><value>3</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Commissar</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Commissar</label>
+        <description>[PAWN_nameDef] is part of the upper hierarchy of the military, where wars are fought trough diplomacy instead of weapons.</description>
+        <statOffsets>     
+          <SocialImpact>1.0</SocialImpact>
+          <NegotiationAbility>0.15</NegotiationAbility>
+          <TradePriceImprovement>0.60</TradePriceImprovement>
+          <ArrestSuccessChance>0.20</ArrestSuccessChance>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Social</key><value>10</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Berserker</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Berserker</label>
+        <description>[PAWN_nameDef] has been genetically classifed as a berserker, a fighter of bloodlust and strength, feeling no pain, and all of gain from witnessing death.</description>
+        <statOffsets>
+          <PainShockThreshold>0.80</PainShockThreshold>
+          <MoveSpeed>7.5</MoveSpeed>
+          <MeleeDodgeChance>25</MeleeDodgeChance>
+          <MeleeHitChance>+45</MeleeHitChance>
+          <MeleeArmorPenetration>0.30</MeleeArmorPenetration>
+          <CarryingCapacity>+185</CarryingCapacity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>4</value>
+          </li>
+          <li>
+            <key>Melee</key><value>12</value>
+          </li>
+        </skillGains>
+        <!-- Gotta mess around and add the mood buffs -->
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Hellion</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Hellion</label>
+        <description>[PAWN_nameDef] has been trained as a Hellion Warrior. Untilising speed and rougish tactics to blindside an enemy before putting them down at high speeds.</description>
+        <statOffsets>
+          <PainShockThreshold>0.50</PainShockThreshold>
+          <MoveSpeed>12.5</MoveSpeed>
+          <MeleeDodgeChance>30</MeleeDodgeChance>
+          <MeleeHitChance>+60</MeleeHitChance>
+          <MeleeArmorPenetration>0.50</MeleeArmorPenetration>
+          <CarryingCapacity>+125</CarryingCapacity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>2</value>
+          </li>
+          <li>
+            <key>Melee</key><value>10</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Vanguard</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Vanguard</label>
+        <description>[PAWN_nameDef] is part of the Vanguard Legion. The first and frontlines in a fight to sow havoc and reap life.</description>
+        <statOffsets>
+          <MoveSpeed>5</MoveSpeed>
+          <ArmorRating_Sharp>+0.6</ArmorRating_Sharp>
+          <ArmorRating_Blunt>+0.6</ArmorRating_Blunt>
+          <ArmorRating_Heat>+0.6</ArmorRating_Heat>
+          <MeleeDodgeChance>15</MeleeDodgeChance>
+          <MeleeHitChance>+30</MeleeHitChance>
+          <MeleeArmorPenetration>0.10</MeleeArmorPenetration>
+          <CarryingCapacity>+60</CarryingCapacity>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>4</value>
+          </li>
+          <li>
+            <key>Melee</key><value>6</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Valkyrie</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Valkyrie</label>
+        <description>[PAWN_nameDef] was inducted into Valkyrie squad, an elite group of fighters deemed just as legendary as their mythical counterparts.</description>
+        <statOffsets>
+          <CarryingCapacity>+310</CarryingCapacity>
+          <ConstructionSpeed>+0.5</ConstructionSpeed>
+          <ArmorRating_Sharp>+0.35</ArmorRating_Sharp>
+          <ArmorRating_Blunt>+0.35</ArmorRating_Blunt>
+          <ArmorRating_Heat>+0.35</ArmorRating_Heat>
+          <MoveSpeed>2.5</MoveSpeed>
+          <MeleeDodgeChance>20</MeleeDodgeChance>
+          <MeleeHitChance>+30</MeleeHitChance>
+          <WorkSpeedGlobal>+0.80</WorkSpeedGlobal>
+          <GlobalLearningFactor>+0.90</GlobalLearningFactor>
+          <ConstructionSpeed>+0.5</ConstructionSpeed>
+          <AimingDelayFactor>-0.2</AimingDelayFactor>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+          <PsychicSensitivity>0.15</PsychicSensitivity>
+          <PawnBeauty>+2</PawnBeauty>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>9</value>
+          </li>
+          <li>
+            <key>Melee</key><value>9</value>
+          </li>
+          <li>
+            <key>Construction</key><value>8</value>
+          </li>
+          <li>
+            <key>Social</key><value>6</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>6</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Warden</defName>
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>Warden</label>
+        <description>[PAWN_nameDef] is part of the group of Hrutarians that watch over the prisoners of war brought in from every front.</description>
+        <statOffsets>
+          <ArrestSuccessChance>+1</ArrestSuccessChance>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>3</value>
+          </li>
+          <li>
+            <key>Melee</key><value>3</value>
+          </li>
+          <li>
+            <key>Social</key><value>8</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!-- Very Rare -->
+
+<!-- Legendary -->
+
+  <TraitDef>
+    <defName>RAM_NB_Valkyrie</defName>
+    <commonality>0.05</commonality>
+    <degreeDatas>
+      <li>
+        <label>Natural Born Valkyrie</label>
+        <description>[PAWN_nameDef] has been trained by Valkyries, to be a Valkyrie, an elite group of fighters deemed just as legendary as their mythical counterparts.</description>
+        <statOffsets>
+          <CarryingCapacity>+435</CarryingCapacity>
+          <GlobalLearningFactor>+1.25</GlobalLearningFactor>
+          <ConstructionSpeed>+1</ConstructionSpeed>
+          <MoveSpeed>4</MoveSpeed>
+          <WorkSpeedGlobal>1.25</WorkSpeedGlobal>
+          <MeleeDodgeChance>40</MeleeDodgeChance>
+          <MeleeHitChance>+50</MeleeHitChance>
+          <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+          <ConstructionSpeed>+0.5</ConstructionSpeed>
+          <AimingDelayFactor>-0.2</AimingDelayFactor>
+          <ArmorRating_Sharp>+0.5</ArmorRating_Sharp>
+          <ArmorRating_Blunt>+0.5</ArmorRating_Blunt>
+          <ArmorRating_Heat>+0.5</ArmorRating_Heat>
+          <PsychicSensitivity>0.30</PsychicSensitivity>
+          <PawnBeauty>+3</PawnBeauty>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Shooting</key><value>14</value>
+          </li>
+          <li>
+            <key>Melee</key><value>14</value>
+          </li>
+          <li>
+            <key>Social</key><value>8</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>8</value>
+          </li>
+          <li>
+            <key>Medicine</key><value>6</value>
+          </li>
+          <li>
+            <key>Construction</key><value>10</value>
+          </li>
+          
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>RAM_Vestal</defName>
+    <commonality>0.05</commonality>
+    <degreeDatas>
+      <li>
+        <label>Vestal</label>
+        <description>[PAWN_nameDef] is part of the Vestal corp. a group of battlefield medics that have been named after an ancient goddess often called the guardian of the people.</description>
+        <statOffsets>
+          <MedicalOperationSpeed>+0.80</MedicalOperationSpeed>
+          <MedicalSurgerySuccessChance>1.20</MedicalSurgerySuccessChance>
+          <MedicalTendSpeed>+0.8</MedicalTendSpeed>
+          <MedicalTendQuality>+0.6</MedicalTendQuality>
+          <ImmunityGainSpeed>.20</ImmunityGainSpeed>
+          <PsychicSensitivity>0.10</PsychicSensitivity>
+          <ArmorRating_Sharp>+0.5</ArmorRating_Sharp>
+          <ArmorRating_Blunt>+0.5</ArmorRating_Blunt>
+          <ArmorRating_Heat>+0.5</ArmorRating_Heat>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Social</key><value>4</value>
+          </li>
+          <li>
+            <key>Intellectual</key><value>8</value>
+          </li>
+          <li>
+            <key>Medicine</key><value>10</value>
+          </li>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!-- Mythic -->
+
+</Defs>

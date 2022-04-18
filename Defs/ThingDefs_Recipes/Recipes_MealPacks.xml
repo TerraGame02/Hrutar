@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=================================== Meal Pack ==========================================-->
+
+  <RecipeDef Name="CookMealPackBase" ParentName="CookMealBase" Abstract="True">
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_SynthesizeMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealPackBase">
+    <defName>SynthesizeMealPack</defName>
+    <label>Sythesize Meal Packs</label>
+    <description>Synthesize Meal Packs made only for hrutarians</description>
+    <jobString>Sythesizing Meal Packs.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>9</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <products>
+      <RAM_MealPack>6</RAM_MealPack>
+    </products>
+  </RecipeDef>
+
+</Defs>
