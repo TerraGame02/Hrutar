@@ -4,7 +4,7 @@
   <ScenarioDef>
     <defName>RAM_TemplarScouts</defName>
     <label>Templar Scouting Squad</label>
-    <description>Your Templar Squadron tasked by Warmaster Diana herself, to build a Fortified Outpost/Base and to secure the map for resources. you have been provided with the necessary supplies for your mission.</description>
+    <description>Your Templar Squadron tasked by your Warwasmer, to build a Fortified Outpost/Base and to secure the map for resources. you have been provided with the necessary supplies and the Technology for your mission.</description>
     <scenario>
       <summary>A Squadron of 5 Hrutar Templars. Secure the map, Gather Resources, Strengthen your Defenses for the upcoming threat.</summary>
       <playerFaction>
@@ -26,6 +26,13 @@
           <method>DropPods</method>
           <visible>false</visible>
         </li>
+		
+		<li Class="ScenPart_GameStartDialog">
+		  <def>GameStartDialog</def>
+		  <text>This is Command, your squad has been tasked to secure this location for resources and strategic points, in the name of the empress. Do Not Fail Her. "Glory to the Empire"</text>
+		  <textKey>GameStartDialog</textKey>
+		  <closeSound>GameStartSting</closeSound>
+		</li>
         
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
@@ -116,12 +123,15 @@
           <count>25</count>
         </li>
         
-        <!-- Game start dialog -->
-        <li Class="ScenPart_GameStartDialog">
-          <def>GameStartDialog</def>
-          <textKey>GameStartDialog</textKey>
-          <closeSound>GameStartSting</closeSound>
-        </li>
+		<li Class="ScenPart_StartingResearch">
+		  <def>StartingResearch</def>
+		  <project>HrutarTemplarTech</project>
+		</li>
+			
+		<li Class="ScenPart_StartingResearch">
+		  <def>StartingResearch</def>
+		  <project>HrutarTemplar_BastionTech</project>
+		</li>
         
       </parts>
     </scenario>

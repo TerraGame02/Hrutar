@@ -46,8 +46,18 @@
         <basePowerConsumption>-12500</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>8</fuelConsumptionRate>
+        <fuelCapacity>150</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>RawMagma</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
 	  <li Class="CompProperties_Glower">
-        <glowRadius>7</glowRadius>
+        <glowRadius>12</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">
