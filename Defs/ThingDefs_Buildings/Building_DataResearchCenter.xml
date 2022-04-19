@@ -35,8 +35,8 @@
     <statBases>
       <MaxHitPoints>1550</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <ResearchSpeedFactor>2.5</ResearchSpeedFactor>
+      <Flammability>0</Flammability>
+      <ResearchSpeedFactor>5.5</ResearchSpeedFactor>
     </statBases>
     <comps>
       <li Class="CompProperties_Power">
@@ -52,7 +52,7 @@
       </li>
     </comps>
     <fillPercent>0.5</fillPercent>
-    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <interactionCellOffset>(2,0,-2)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>

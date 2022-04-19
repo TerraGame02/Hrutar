@@ -2,11 +2,11 @@
 <Defs>
 
 
-  <!--=============== Cull Rapid Artillery ===============-->
+  <!--=============== Thor Rapid Artillery ===============-->
 
   <ThingDef ParentName="BuildingBase">
-    <defName>Turret_CullArtilleryTurret</defName>
-    <label>Cull Rapid Artillery</label>
+    <defName>Turret_ThorArtilleryTurret</defName>
+    <label>Thor Rapid Artillery</label>
     <description>Ai Controlled Missile Turret.</description>
   <uiIconPath>Things/Building/Assets/CullArtillery_Icon</uiIconPath>
     <thingClass>Building_TurretGun</thingClass>
@@ -14,7 +14,7 @@
     <graphicData>
       <texPath>Things/Building/Assets/HrutarMediumTurretBaseArtillery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2, 2)</drawSize>
+      <drawSize>(3, 3)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
@@ -31,7 +31,7 @@
     </thingCategories>
     <stealable>false</stealable>
     <rotatable>false</rotatable>
-    <size>(2,2)</size>
+    <size>(3,3)</size>
     <statBases>
       <MaxHitPoints>2950</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -46,6 +46,10 @@
         <explosiveRadius>5.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
       </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
@@ -93,19 +97,19 @@
     <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretGunDef>Gun_CullTurret</turretGunDef>
-      <turretBurstCooldownTime>8</turretBurstCooldownTime>
+      <turretGunDef>Gun_ThorTurret</turretGunDef>
+      <turretBurstCooldownTime>10</turretBurstCooldownTime>
       <turretTopDrawSize>4.5</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
-    <uiIconScale>0.6</uiIconScale>
+    <uiIconScale>1.2</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_CullShell</defName>
-    <label>Cull Artillery Shells</label>
+    <defName>Bullet_ThorShell</defName>
+    <label>Thor Artillery Shells</label>
 	<thingClass>Projectile_Explosive</thingClass>
     <graphicData>
       <texPath>Bullets/80CalSpectreSniperRifle</texPath>
@@ -122,8 +126,8 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
-    <defName>Gun_CullTurret</defName>
-    <label>Cull Rapid Artillery</label>
+    <defName>Gun_ThorTurret</defName>
+    <label>Thor Rapid Artillery</label>
     <description>good god this is a pain.</description>
     <graphicData>
       <texPath>Things/Building/Assets/CullTurretTop</texPath>
@@ -152,19 +156,20 @@
         <verbClass>Verb_Shoot</verbClass>
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_CullShell</defaultProjectile>
+        <defaultProjectile>Bullet_ThorShell</defaultProjectile>
         <warmupTime>2.0</warmupTime>
         <forcedMissRadius>5</forcedMissRadius>
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>25</minRange>
         <range>150</range>
-        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
         <soundCast>Shot_Cull</soundCast>
         <muzzleFlashScale>22</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<consumeFuelPerShot>1</consumeFuelPerShot>
+		<consumeFuelPerShot>2</consumeFuelPerShot>
       </li>
     </verbs>
   </ThingDef>

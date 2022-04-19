@@ -14,7 +14,7 @@
     <graphicData>
       <texPath>Things/Building/Assets/HrutarLargeTurretBaseMjolnir</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4, 4)</drawSize>
+      <drawSize>(6, 6)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
@@ -31,9 +31,9 @@
     </thingCategories>
     <stealable>false</stealable>
     <rotatable>false</rotatable>
-    <size>(4,4)</size>
+    <size>(6,6)</size>
     <statBases>
-      <MaxHitPoints>8950</MaxHitPoints>
+      <MaxHitPoints>9950</MaxHitPoints>
       <Flammability>0</Flammability>
       <WorkToBuild>598800</WorkToBuild>
       <Mass>1750</Mass>
@@ -47,10 +47,14 @@
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>22</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>3500</basePowerConsumption>
+        <basePowerConsumption>9500</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
@@ -96,12 +100,12 @@
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_MjolnirTurret</turretGunDef>
       <turretBurstCooldownTime>80</turretBurstCooldownTime>
-      <turretTopDrawSize>7.5</turretTopDrawSize>
+      <turretTopDrawSize>9.5</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
-    <uiIconScale>0.6</uiIconScale>
+    <uiIconScale>1.5</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -109,15 +113,15 @@
     <label>Mjolnir Shells</label>
 	<thingClass>Projectile_Explosive</thingClass>
     <graphicData>
-      <texPath>Bullets/80CalSpectreSniperRifle</texPath>
+      <texPath>Bullets/Mjolnir</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.5</drawSize>
     </graphicData>
     <projectile>
 	  <flyOverhead>true</flyOverhead>
-      <damageAmountBase>390</damageAmountBase>
+      <damageAmountBase>500</damageAmountBase>
       <speed>60</speed>
-	  <explosionRadius >20</explosionRadius >
+	  <explosionRadius >25</explosionRadius >
 	  <damageDef>Bomb</damageDef>
     </projectile>
   </ThingDef>

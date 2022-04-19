@@ -8,7 +8,7 @@
     <defName>Turret_BansheeTurret</defName>
     <label>Banshee EMP Missile</label>
     <description>Ai Controlled Missile Turret.</description>
-  <uiIconPath>Things/Building/Assets/VikingMissile_Icon</uiIconPath>
+  <uiIconPath>Things/Building/Assets/Banshee_Icon</uiIconPath>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
@@ -100,7 +100,7 @@
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
-    <uiIconScale>0.6</uiIconScale>
+    <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -158,7 +158,7 @@
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>15</minRange>
         <range>100</range>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Shot_Viking</soundCast>
         <muzzleFlashScale>22</muzzleFlashScale>

@@ -11,13 +11,13 @@
     <graphicData>
       <texPath>Things/Items/RAWMagmaContainer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.85</drawSize>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <stackLimit>150</stackLimit>
     <healthAffectsPrice>true</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <MarketValue>5.3</MarketValue>
+      <MarketValue>15</MarketValue>
       <Mass>0.5</Mass>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
@@ -36,7 +36,7 @@
     <graphicData>
       <texPath>Things/Items/Gjallarium_Ore</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.85</drawSize>
+      <drawSize>1</drawSize>
     </graphicData>
     <stackLimit>125</stackLimit>
     <healthAffectsPrice>true</healthAffectsPrice>
@@ -61,13 +61,13 @@
     <graphicData>
       <texPath>Things/Items/Nano_Fiber</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.85</drawSize>
+      <drawSize>1</drawSize>
     </graphicData>
     <stackLimit>225</stackLimit>
     <healthAffectsPrice>true</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <MarketValue>9</MarketValue>
+      <MarketValue>60</MarketValue>
       <Mass>0.038</Mass>
       <Flammability>0.4</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
@@ -98,7 +98,7 @@
 		<useHitPoints>false</useHitPoints>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<statBases>
-			<MarketValue>10</MarketValue>
+			<MarketValue>90</MarketValue>
 			<Mass>1.9</Mass>
 			<StuffPower_Armor_Sharp>2.16</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
@@ -111,6 +111,26 @@
 		</thingCategories>
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<commonality>0.02</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(40,40,65)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>6.5</MaxHitPoints>
+				<Beauty>5</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>2.5</WorkToMake>
+				<WorkToBuild>2.5</WorkToBuild>
+				<DoorOpenSpeed>0.5</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>2.5</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	</ThingDef>
   
@@ -130,7 +150,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>350</MarketValue>
+      <MarketValue>450</MarketValue>
       <Mass>16</Mass>
       <Flammability>0.6</Flammability>
       <DeteriorationRate>0</DeteriorationRate>

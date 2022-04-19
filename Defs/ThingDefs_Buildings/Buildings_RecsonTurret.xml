@@ -53,7 +53,7 @@
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
     <designationHotKey>Misc3</designationHotKey>    
-    <uiIconScale>0.95</uiIconScale>
+    <uiIconScale>1</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="RecsonTurret">

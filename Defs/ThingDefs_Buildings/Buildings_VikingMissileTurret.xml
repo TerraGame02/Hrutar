@@ -100,7 +100,7 @@
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
-    <uiIconScale>0.6</uiIconScale>
+    <uiIconScale>1</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
