@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BasePawn" Name="BaseMechanoid" Abstract="True">
+  <ThingDef ParentName="BasePawn" Name="BaseVoid" Abstract="True">
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
       <PsychicSensitivity>0.5</PsychicSensitivity>
@@ -12,34 +12,27 @@
       <MeatAmount>0</MeatAmount>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
     </statBases>
-    <receivesSignals>true</receivesSignals>
+    <receivesSignals>false</receivesSignals>
     <race>
-      <fleshType>Mechanoid</fleshType>
+      <fleshType>VoidElemental</fleshType>
       <needsRest>false</needsRest>
       <hasGenders>false</hasGenders>
       <foodType>None</foodType>
       <lifeExpectancy>2500</lifeExpectancy>
-      <bloodDef>Filth_MachineBits</bloodDef>
+      <bloodDef>Filth_BloodVoid</bloodDef>
     </race>
     <comps>
-      <li Class="CompProperties_CanBeDormant" />
-      <li Class="CompProperties_WakeUpDormant">
-        <wakeUpOnDamage>true</wakeUpOnDamage>
-        <anyColonistCloseCheckRadius>30</anyColonistCloseCheckRadius>
-        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
-      </li>
     </comps>
   </ThingDef>
 
-  <PawnKindDef Name="BaseMechanoidKind" Abstract="True">
-    <defaultFactionType>Mechanoid</defaultFactionType>
+  <PawnKindDef Name="BaseVoidKind" Abstract="True">
     <aiAvoidCover>true</aiAvoidCover>
     <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>
 
   <!-- Walker (lancer/scyther) base -->
 
-  <ThingDef ParentName="BaseMechanoid" Name="BaseMechanoidWalker" Abstract="True">
+  <ThingDef ParentName="BaseVoid" Name="BaseVoidWalker" Abstract="True">
     <statBases>
       <MoveSpeed>8</MoveSpeed>
       <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
@@ -67,7 +60,7 @@
 
   <!-- Void Lancer -->
   
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseVoidWalker">
     <defName>V_Lancer</defName>
     <label>void lancer</label>
     <description>Fast human-sized combat mechanoids built for medium and long-range combat. Their bodies are light, making them vulnerable targets at close range - especially in melee combat.</description>
@@ -113,11 +106,11 @@
     </race>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <PawnKindDef ParentName="BaseVoidKind">
     <defName>V_Lancer</defName>
     <label>void lancer</label>
     <race>V_Lancer</race>
-    <combatPower>150</combatPower>
+    <combatPower>75</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -138,7 +131,7 @@
 
   <!-- Marauder -->
   
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseVoidWalker">
     <defName>V_Marauder</defName>
     <label>void marauder</label>
     <description>Fast human-sized combat mechanoids built for medium and long-range combat. Their bodies are light, making them vulnerable targets at close range - especially in melee combat.</description>
@@ -184,11 +177,11 @@
     </race>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <PawnKindDef ParentName="BaseVoidKind">
     <defName>V_Marauder</defName>
     <label>void marauder</label>
     <race>V_Marauder</race>
-    <combatPower>600</combatPower>
+    <combatPower>300</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -209,7 +202,7 @@
 
   <!-- Void Scyther -->
 
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseVoidWalker">
     <defName>V_Scyther</defName>
     <label>scyther</label>
     <description>Fast, spindly, human-sized combat mechanoids specializing in rapid approach and close-range combat. Their bodies are covered in points and blades, but their mostly use two arm blades to lop off limbs or gut their victims alive.</description>
@@ -257,11 +250,11 @@
     </race>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <PawnKindDef ParentName="BaseVoidKind">
     <defName>V_Scyther</defName>
     <label>scyther</label>
     <race>V_Scyther</race>
-    <combatPower>50</combatPower>
+    <combatPower>25</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -282,7 +275,7 @@
 
 <!-- Apostle Razalith -->
 
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseVoidWalker">
     <defName>V_Apostle_Razalith</defName>
     <label>apostle razalith</label>
     <description>Fast, spindly, human-sized combat mechanoids specializing in rapid approach and close-range combat. Their bodies are covered in points and blades, but their mostly use two arm blades to lop off limbs or gut their victims alive.</description>
@@ -319,11 +312,11 @@
     </race>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <PawnKindDef ParentName="BaseVoidKind">
     <defName>V_Apostle_Razalith</defName>
     <label>apostle razalith</label>
     <race>V_Apostle_Razalith</race>
-    <combatPower>1000</combatPower>
+    <combatPower>500</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -344,7 +337,7 @@
 
     <!--Ravager-->
 
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseVoidWalker">
     <defName>V_Ravager</defName>
     <label>ravager</label>
     <description>Fast, spindly, human-sized combat mechanoids specializing in rapid approach and close-range combat. Their bodies are covered in points and blades, but their mostly use two arm blades to lop off limbs or gut their victims alive.</description>
@@ -414,11 +407,11 @@
     </race>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <PawnKindDef ParentName="BaseVoidKind">
     <defName>V_Ravager</defName>
     <label>ravager</label>
     <race>V_Ravager</race>
-    <combatPower>500</combatPower>
+    <combatPower>250</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -439,7 +432,7 @@
 
   <!-- Pikeman - slow sniper weak at close range -->
   
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseVoidWalker">
     <defName>V_Stalker</defName>
     <label>stalker</label>
     <description>A clunky multi-legged combat mechanoid specialized as a long-range weapons platform. While effective at distance, it is weak in close-range fights and in melee combat.\n\nVeterans of mechanoid wars know that often, the safest place to be around a pikeman is touching it.</description>
@@ -497,12 +490,12 @@
     </race>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <PawnKindDef ParentName="BaseVoidKind">
     <defName>V_Stalker</defName>
     <label>stalker</label>
     <labelPlural>stalkers</labelPlural>
     <race>V_Stalker</race>
-    <combatPower>500</combatPower>
+    <combatPower>250</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -523,7 +516,7 @@
 
   <!-- Termite 
 
-  <ThingDef ParentName="BaseMechanoid">
+  <ThingDef ParentName="BaseVoid">
     <defName>Mech_Termite</defName>
     <label>termite</label>
     <description>A medium-sized mechanoid. Termites specialize in burrowing, digging, and breaking through defensive structures. Defenders need to decide whether to try to eliminate the termite before it can dig through their defenses, or take it where it emerges.</description>
