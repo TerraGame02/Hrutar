@@ -9,10 +9,8 @@
         <label>Hrutar</label>
         <description>Hrutarians are crafted super species for war from a young age, many long hours of combat drills, emergency construction, battlefield medic training and a plethora of other skills deemed vital for winning wars are so ingrained into their society that children barely able to crawl are taught how to do things even if they don't understand what its for.</description>
         <statOffsets>
-		  <RestRateMultiplier>1</RestRateMultiplier>
           <PawnBeauty>2</PawnBeauty>
-          <MoveSpeed>1.5</MoveSpeed>
-          <MentalBreakThreshold>1.60</MentalBreakThreshold>
+          <MoveSpeed>1</MoveSpeed>
           <PainShockThreshold>+0.6</PainShockThreshold>
           <PsychicSensitivity>0.05</PsychicSensitivity>
 		  <CarryingCapacity>165</CarryingCapacity>
@@ -24,8 +22,6 @@
         </statOffsets>
 		<statFactors>
 				<PawnBeauty>3</PawnBeauty>
-				<CarryingCapacity>6</CarryingCapacity>
-				<RestRateMultiplier>0.5</RestRateMultiplier>
 				<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
 				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 				<ArmorRating_Heat>0.9</ArmorRating_Heat>

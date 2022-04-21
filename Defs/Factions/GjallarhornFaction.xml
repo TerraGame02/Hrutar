@@ -3,9 +3,9 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>GjallarhornFaction</defName>
     <label>Leivateinn Templars</label>
-		<description>granite and slate chunks come to life. Limestone is ok.</description>
-		<pawnSingular>Gjallarhorn</pawnSingular>
-    <pawnsPlural>Templar</pawnsPlural>
+		<description>We are the Vanguard of her highness, We are the Bastion of Unbreakable Will. For these Heretics crave the cleansing fire and might of absolution. They need not fear, for we shall personaly deliver it to them in the name of our Empress.</description>
+		<pawnSingular>Templar</pawnSingular>
+    <pawnsPlural>Templars</pawnsPlural>
     <categoryTag>Ancient</categoryTag>
     <fixedName>Templars</fixedName>
     <leaderTitle>Warmaster</leaderTitle>
@@ -31,9 +31,7 @@
   	  <li>RamGjallarhorn</li>
 	  </allowedCultures>
     <colorSpectrum>
-      <li>(0.44, 0.41, 0.32)</li>
-      <li>(0.61, 0.58, 0.49)</li>
-      <li>(0.60, 0.49, 0.36)</li>
+      <li>(255, 215, 0)</li>
     </colorSpectrum>
     <fixedLeaderKinds>
       <li>Ram_SentinelDefender</li>

@@ -136,13 +136,53 @@
 		<researchViewX>3</researchViewX>
 		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_T2BastionTech</defName>
+		<label>T2 Bastion Tech</label>
+		<description>Build the Templar's most powerful defenses.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>46000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+			<li>Templar_DAI</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+			<li>HrutarTemplar_BastionTech</li>
+		</prerequisites>		
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HrutarTemplar_T3BastionTech</defName>
+		<label>T3 Bastion Tech</label>
+		<description>Build the Templar's most powerful defenses.</description>
+		<tab>HrutarTemplar_technology</tab>
+		<baseCost>57000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+			<li>Templar_DAI</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>HrutarTemplarTech</li>
+			<li>HrutarTemplar_T2BastionTech</li>
+		</prerequisites>		
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>HrutarTemplar_JudgementTech</defName>
 		<label>Judgement SuperWeapons</label>
 		<description>Build the Templar's most powerful defenses.</description>
 		<tab>HrutarTemplar_technology</tab>
-		<baseCost>55000</baseCost>
+		<baseCost>69000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -152,7 +192,7 @@
 		<prerequisites>
 			<li>HrutarTemplarTech</li>
 			<li>ShipComputerCore</li>
-			<li>HrutarTemplar_BastionTech</li>
+			<li>HrutarTemplar_T3BastionTech</li>
 		</prerequisites>		
 		<researchViewX>3</researchViewX>
 		<researchViewY>3</researchViewY>

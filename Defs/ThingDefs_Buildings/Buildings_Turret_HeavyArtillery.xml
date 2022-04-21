@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--=============== Thor Rapid Artillery ===============-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_ThorArtilleryTurret</defName>
+    <label>Thor T1 Artillery</label>
+    <description>Ai Controlled Missile Turret.</description>
+  <uiIconPath>Things/Building/Assets/ART_ThorArtillery_Icon</uiIconPath>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Assets/ART_MediumTurretBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <drawOffset>(0,0,-0.1)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>1750</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>67000</WorkToBuild>
+      <Mass>450</Mass>
+      <Beauty>10</Beauty>
+      <ShootingAccuracyTurret>0.7</ShootingAccuracyTurret>
+    </statBases>
+    <designatorDropdown>GROUP_RAM_Artillery</designatorDropdown>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shells Remaining</fuelLabel>
+        <fuelGizmoLabel>Belt</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Shell_HighExplosive</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>10</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <!--<factorByDifficulty>true</factorByDifficulty>-->
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs shells</outOfFuelMessage>
+        <fuelIconPath>Things/Building/Assets/Yoink</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+	  <Steel>125</Steel>
+      <Hrutar_BlackSteel>225</Hrutar_BlackSteel>
+      <Hrutar_Component>10</Hrutar_Component>
+    </costList>
+	<researchPrerequisites>
+	  <li>HrutarTemplar_BastionTech</li>
+	  <li>HrutarTemplarTech</li>
+	</researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>35</specialDisplayRadius>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_ThorTurret</turretGunDef>
+      <turretBurstCooldownTime>10</turretBurstCooldownTime>
+      <turretTopDrawSize>5</turretTopDrawSize>
+      <turretTopOffset>(0,1)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+    <uiIconScale>1.2</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ThorShell</defName>
+    <label>Thor Artillery Shells</label>
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Bullets/RAM_ArtilleryShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+    </graphicData>
+    <projectile>
+	  <flyOverhead>true</flyOverhead>
+      <damageAmountBase>65</damageAmountBase>
+      <speed>80</speed>
+	  <explosionRadius >6</explosionRadius >
+	  <damageDef>Bomb</damageDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_ThorTurret</defName>
+    <label>Thor Rapid Artillery</label>
+    <description>good god this is a pain.</description>
+    <graphicData>
+      <texPath>Things/Building/Assets/ART_ThorTurretTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,4.5)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.1</AccuracyShort>
+      <AccuracyMedium>0.1</AccuracyMedium>
+      <AccuracyLong>0.996</AccuracyLong>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ThorShell</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <forcedMissRadius>8</forcedMissRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>35</minRange>
+        <range>175</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Cull</soundCast>
+        <muzzleFlashScale>22</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <!--=============== Hel Artillery Gun ===============-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_HelArtilleryTurret</defName>
+    <label>Hel T2 Artillery</label>
+    <description>Ai Controlled Artillery Turret.</description>
+  <uiIconPath>Things/Building/Assets/ART_HelArtillery_Icon</uiIconPath>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Assets/ART_MediumTurretBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <drawOffset>(0,0,-0.1)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <size>(3,3)</size>
+    <statBases>
+      <MaxHitPoints>2350</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>68550</WorkToBuild>
+      <Mass>560</Mass>
+      <Beauty>10</Beauty>
+      <ShootingAccuracyTurret>0.7</ShootingAccuracyTurret>
+    </statBases>
+    <designatorDropdown>GROUP_RAM_Artillery</designatorDropdown>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shells Remaining</fuelLabel>
+        <fuelGizmoLabel>Belt</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Shell_HighExplosive</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>16</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <!--<factorByDifficulty>true</factorByDifficulty>-->
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs shells</outOfFuelMessage>
+        <fuelIconPath>Things/Building/Assets/Yoink</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+	  <Steel>225</Steel>
+      <Hrutar_BlackSteel>325</Hrutar_BlackSteel>
+      <Hrutar_Component>14</Hrutar_Component>
+    </costList>
+	<researchPrerequisites>
+	  <li>HrutarTemplar_T2BastionTech</li>
+	  <li>HrutarTemplarTech</li>
+	</researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>35</specialDisplayRadius>
+    <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_HelTurret</turretGunDef>
+      <turretBurstCooldownTime>12</turretBurstCooldownTime>
+      <turretTopDrawSize>5</turretTopDrawSize>
+      <turretTopOffset>(0,1)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+    <uiIconScale>1.2</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HelShell</defName>
+    <label>Hel Artillery Shells</label>
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Bullets/RAM_ArtilleryShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+    </graphicData>
+    <projectile>
+	  <flyOverhead>true</flyOverhead>
+      <damageAmountBase>60</damageAmountBase>
+      <speed>80</speed>
+	  <explosionRadius >6</explosionRadius >
+	  <damageDef>Bomb</damageDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_HelTurret</defName>
+    <label>Hel T2 Artillery</label>
+    <description>good god this is a pain.</description>
+    <graphicData>
+      <texPath>Things/Building/Assets/ART_HelTurretTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,4.5)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.1</AccuracyShort>
+      <AccuracyMedium>0.1</AccuracyMedium>
+      <AccuracyLong>0.996</AccuracyLong>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HelShell</defaultProjectile>
+        <warmupTime>2.2</warmupTime>
+        <forcedMissRadius>8</forcedMissRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>35</minRange>
+        <range>175</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_Cull</soundCast>
+        <muzzleFlashScale>22</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <!--=============== Odin Artillery Gun ===============-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_OdinArtilleryTurret</defName>
+    <label>Odin T3 Artillery</label>
+    <description>Ai Controlled Artillery Turret.</description>
+  <uiIconPath>Things/Building/Assets/ART_OdinArtillery_Icon</uiIconPath>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Assets/ART_LargeTurretBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4, 4)</drawSize>
+      <drawOffset>(0,0,-0.1)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.5,0.35,1.4)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <size>(4,4)</size>
+    <statBases>
+      <MaxHitPoints>2950</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>71000</WorkToBuild>
+      <Mass>670</Mass>
+      <Beauty>10</Beauty>
+      <ShootingAccuracyTurret>0.7</ShootingAccuracyTurret>
+    </statBases>
+    <designatorDropdown>GROUP_RAM_Artillery</designatorDropdown>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3950</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shells Remaining</fuelLabel>
+        <fuelGizmoLabel>Belt</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Shell_HighExplosive</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>16</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <!--<factorByDifficulty>true</factorByDifficulty>-->
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs shells</outOfFuelMessage>
+        <fuelIconPath>Things/Building/Assets/Yoink</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+	  <Steel>325</Steel>
+      <Hrutar_BlackSteel>425</Hrutar_BlackSteel>
+      <Hrutar_Component>16</Hrutar_Component>
+    </costList>
+	<researchPrerequisites>
+	  <li>HrutarTemplar_T3BastionTech</li>
+	  <li>HrutarTemplarTech</li>
+	</researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>35</specialDisplayRadius>
+    <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_OdinTurret</turretGunDef>
+      <turretBurstCooldownTime>13</turretBurstCooldownTime>
+      <turretTopDrawSize>5.8</turretTopDrawSize>
+      <turretTopOffset>(0,1)</turretTopOffset>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+    <uiIconScale>1.2</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OdinShell</defName>
+    <label>Odin Artillery Shells</label>
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Bullets/RAM_ArtilleryShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+    </graphicData>
+    <projectile>
+	  <flyOverhead>true</flyOverhead>
+      <damageAmountBase>75</damageAmountBase>
+      <speed>80</speed>
+	  <explosionRadius >7</explosionRadius >
+	  <damageDef>Bomb</damageDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_OdinTurret</defName>
+    <label>Odin T3 Artillery</label>
+    <description>good god this is a pain.</description>
+    <graphicData>
+      <texPath>Things/Building/Assets/ART_OdinTurretTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.5,5.2)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.1</AccuracyShort>
+      <AccuracyMedium>0.1</AccuracyMedium>
+      <AccuracyLong>0.996</AccuracyLong>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OdinShell</defaultProjectile>
+        <warmupTime>2.4</warmupTime>
+        <forcedMissRadius>8</forcedMissRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>35</minRange>
+        <range>175</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Cull</soundCast>
+        <muzzleFlashScale>22</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef> 
+ 
+
+</Defs>

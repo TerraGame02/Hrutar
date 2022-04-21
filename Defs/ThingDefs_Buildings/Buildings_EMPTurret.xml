@@ -8,11 +8,11 @@
     <defName>Turret_BansheeTurret</defName>
     <label>Banshee EMP Missile</label>
     <description>Ai Controlled Missile Turret.</description>
-  <uiIconPath>Things/Building/Assets/Banshee_Icon</uiIconPath>
+  <uiIconPath>Things/Building/Assets/EMP_Banshee_Icon</uiIconPath>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Assets/HrutarMediumTurretBaseMissile</texPath>
+      <texPath>Things/Building/Assets/RAM_MediumTurretBase</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2, 2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
@@ -126,7 +126,7 @@
     <label>Banshee Missile Turret</label>
     <description>good god this is a pain.</description>
     <graphicData>
-      <texPath>Things/Building/Assets/BansheeEMP_MissileTurretTop</texPath>
+      <texPath>Things/Building/Assets/EMP_Banshee_MissileTurretTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>

@@ -36,6 +36,7 @@
 						<li>RamHead4</li>
 						<li>RamHead5</li>
 						<li>RamHead6</li>
+						<li>RamHead7</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 						<li>Female</li>
@@ -59,15 +60,11 @@
 							<options>
 								<li>
 									<weight>1</weight>
-									<only>(162,97,53)</only>
+									<only>(162,99,58)</only>
 								</li>
 								<li>
 									<weight>1</weight>
-									<only>(255,188,143)</only>
-								</li>
-								<li>
-									<weight>1</weight>
-									<only>(243,207,187)</only>
+									<only>(255,186,145)</only>
 								</li>
 							</options>
 						</first>				
@@ -258,6 +255,7 @@
 				<li>RAM_HeavyRamArmor</li>
 				<li>RAM_HeavyRamHelmet</li>
 				<li>RAM_DefenderArmor</li>
+				<li>RAM_WarMasterArmor</li>
             </apparelList>
 			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 			<weaponList>
@@ -292,28 +290,34 @@
         </compatibility>
     </alienRace>
     <statBases>			
-			<MarketValue>2900</MarketValue>
-			<MoveSpeed>3.5</MoveSpeed> 
-			<Flammability>0.75</Flammability>
-			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>1100</MarketValue>
+			<MoveSpeed>2.5</MoveSpeed> 
+			<Flammability>0</Flammability>
+			<MentalBreakThreshold>-1</MentalBreakThreshold>
+			<RestRateMultiplier>1.2</RestRateMultiplier>
+			<FoodPoisonChance>0</FoodPoisonChance>
+			<MeleeDodgeChance>15</MeleeDodgeChance>
+			<PainShockThreshold>15</PainShockThreshold>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
-			<CarryingCapacity>165</CarryingCapacity>	
-			<ArmorRating_Sharp>1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.1</ArmorRating_Heat>
-			<ToxicSensitivity>1</ToxicSensitivity>
-			<EatingSpeed>1</EatingSpeed>
+			<CarryingCapacity>365</CarryingCapacity>	
+			<ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<EatingSpeed>1.2</EatingSpeed>
 			<MeatAmount>45</MeatAmount>
 			<PlantWorkSpeed>1.2</PlantWorkSpeed>
 			<PlantHarvestYield>1</PlantHarvestYield>
+			<MeleeHitChance>1</MeleeHitChance>
 			<LeatherAmount>75</LeatherAmount>
 			<MiningSpeed>1.2</MiningSpeed>
 			<MiningYield>1</MiningYield>
-			<MeleeDodgeChance>1.7</MeleeDodgeChance>
 			<AimingDelayFactor>1</AimingDelayFactor>
 			<NegotiationAbility>1.5</NegotiationAbility>
-			<ConstructionSpeed>1</ConstructionSpeed>
+			<ConstructionSpeed>1.2</ConstructionSpeed>
+			<ConstructSuccessChance>1</ConstructSuccessChance>
 			<SocialImpact>1</SocialImpact>
 		</statBases>
 		<tools>
@@ -377,7 +381,7 @@
         <race>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-			<baseHungerRate>0.8</baseHungerRate>
+			<baseHungerRate>0.3</baseHungerRate>
 			<nameGenerator>NamerPersonNordic</nameGenerator>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>

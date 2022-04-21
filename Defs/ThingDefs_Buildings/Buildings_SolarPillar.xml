@@ -45,12 +45,6 @@
 	  <li>HrutarTemplarTech</li>
 	</researchPrerequisites>
     <comps>
-      <li Class="CompProperties_Battery">
-        <storedEnergyMax>800</storedEnergyMax>
-        <efficiency>0.8</efficiency>
-        <shortCircuitInRain>false</shortCircuitInRain>
-        <transmitsPower>true</transmitsPower>
-      </li>
       <li Class="CompProperties_Power">
         <compClass>SuperSun.CompPowerPlantSolarUber</compClass>
         <basePowerConsumption>-1</basePowerConsumption>

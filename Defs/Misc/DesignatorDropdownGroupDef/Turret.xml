@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>GROUP_RAM_Artillery</defName>
+    <label>Templar Artillery</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>GROUP_RAM_Missile</defName>
+    <label>Templar Viking Missile</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>GROUP_RAM_AntiArmor</defName>
+    <label>Templar Anti Armor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>GROUP_RAM_BolterTurret</defName>
+    <label>Templar Bolter Turrets</label>
+  </DesignatorDropdownGroupDef>
+
+
+</Defs>

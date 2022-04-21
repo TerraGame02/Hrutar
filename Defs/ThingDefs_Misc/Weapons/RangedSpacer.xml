@@ -473,7 +473,7 @@
         <defaultProjectile>Bullet_Devastator</defaultProjectile>
         <warmupTime>3.5</warmupTime>
         <range>38</range>
-        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>30</burstShotCount>
         <soundCast>Shot_Devastator</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

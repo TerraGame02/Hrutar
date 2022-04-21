@@ -3,13 +3,13 @@
   
 <!-- ============= Meal Pack ============= -->
 
-   <ThingDef Name="MealBase" ParentName="MealBaseIngredientless" Abstract="True">
+   <ThingDef Name="RAM_MealBase" ParentName="MealBaseIngredientless" Abstract="True">
     <comps>
       <li Class="CompProperties_Ingredients" />
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="MealBase">
+  <ThingDef ParentName="RAM_MealBase">
     <defName>RAM_MealPack</defName>
     <label>Hrutarian Meal Pack</label>
     <description>A high-quality and quantity packaged meal, manufactured for use in Hrutarian Military Rations. Great for traveling. its warm when you open it!.</description>
