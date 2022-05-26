@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>Ram_Race_Setting</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Ram_Warrior</li>
+					</kindDefs>
+				</li>
+			</alienslavekinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>

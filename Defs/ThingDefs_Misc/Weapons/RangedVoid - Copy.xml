@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Void Lancer Gun-->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Machia_RailCannon</defName>
+    <label>rail cannon</label>
+    <description>So you know rail guns right? This is that after snorting like 50 lines of yayo and downing 5 shots of luci in under 10 minutes.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Weapons/Machia_RailCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.7</drawSize>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>MachiaGunHeavy</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RailCannon</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>100</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_Lancer</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RailCannon</defName>
+    <label>rail cannonball</label>
+    <graphicData>
+      <texPath>Bullets/Mjolnir</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.7</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <armorPenetrationBase>1.55</armorPenetrationBase>
+      <stoppingPower>3.5</stoppingPower>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

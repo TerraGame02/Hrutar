@@ -4,7 +4,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>SuviBatteryLarge</defName>
         <label>Large Fission Battery</label>
-        <description>Large Varian of the Fission Battery. Energy Capacity: 24800</description>
+        <description>Tier 2 Fission Battery. Energy Capacity: 36800</description>
         <drawerType>MapMeshAndRealTime</drawerType>
         <thingClass>HrutarianPowerGen.Building_LargeFissionBattery</thingClass>
         <graphicData>
@@ -33,7 +33,7 @@
             <MaxHitPoints>5750</MaxHitPoints>
             <WorkToBuild>2800</WorkToBuild>
             <Mass>90</Mass>
-            <Flammability>1.15</Flammability>
+            <Flammability>0</Flammability>
             <Beauty>5</Beauty>
         </statBases>
         <size>(6,4)</size>
@@ -41,8 +41,8 @@
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
         </building>
     <costList>
-      <Hrutar_BlackSteel>220</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>200</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -50,8 +50,8 @@
 	</researchPrerequisites>
         <comps>
             <li Class="CompProperties_Battery">
-                <storedEnergyMax>12400</storedEnergyMax>
-                <efficiency>0.8</efficiency>
+                <storedEnergyMax>36800</storedEnergyMax>
+                <efficiency>1.5</efficiency>
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <transmitsPower>true</transmitsPower>
             </li>

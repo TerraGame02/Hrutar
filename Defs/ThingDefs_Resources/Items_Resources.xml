@@ -6,7 +6,7 @@
 <ThingDef ParentName="ResourceBase">
     <defName>RawMagma</defName>
     <label>Molten Magma</label>
-    <description>Magma get from underground brrrtt</description>
+    <description>An important element extracted deep beneath the outer-core of planets, and is used in combining materials for purification.</description>
     <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Items/RAWMagmaContainer</texPath>
@@ -26,23 +26,23 @@
     </thingCategories>
   </ThingDef>
   
-  <!--=============== Gjallarium Ore ====================-->
+  <!--=============== Svartur Ore ====================-->
   
   <ThingDef ParentName="ResourceBase">
-    <defName>GjallariumOre</defName>
-    <label>Gjallarium Ore</label>
-    <description>Gjallarium Ore Insert lore here pls wabbit</description>
+    <defName>SvarturOre</defName>
+    <label>Svartur Ore</label>
+    <description>Svartur Ore is a heavily dense metallic ore with energy-manipulating properties, the metal is used by the Templars, Aslans, and Ursa, As the metal itself was discovered by Matriarch Leivateinn herself 80,000 years ago after liberating the Svar Ring Galaxy from the Reavers.</description>
     <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Items/Gjallarium_Ore</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>1</drawSize>
+      <drawSize>1.1</drawSize>
     </graphicData>
     <stackLimit>125</stackLimit>
     <healthAffectsPrice>true</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>175</MaxHitPoints>
-      <MarketValue>260</MarketValue>
+      <MarketValue>25</MarketValue>
       <Mass>1</Mass>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
@@ -56,7 +56,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>HrutarNanoFiber</defName>
     <label>Hrutarian Nano Fiber</label>
-    <description>Nano Fiber Insert lore here pls wabbit</description>
+    <description>Nano Fiber, a combination of nano technology, cloth, and svar alloy. making it a strong protective fiber and insulator for Apparel and Armor</description>
     <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Items/Nano_Fiber</texPath>
@@ -82,12 +82,12 @@
     </thingCategories>
   </ThingDef>
   
-  <!--=============== Black Steel ====================-->
+  <!--=============== Svartur Alloy ====================-->
   
   <ThingDef ParentName="ResourceBase">
-		<defName>Hrutar_BlackSteel</defName>
-		<label>Hrutarian Black Steel</label>
-		<description>Insert Lore hehe.</description>
+		<defName>Hrutar_SvarturAlloy</defName>
+		<label>Svartur Alloy</label>
+		<description>Svartur Alloy, the strongest .</description>
 		<graphicData>
 			<texPath>Things/Items/Black_Steel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -100,8 +100,8 @@
 		<statBases>
 			<MarketValue>90</MarketValue>
 			<Mass>1.9</Mass>
-			<StuffPower_Armor_Sharp>2.16</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>3.56</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>2.67</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
 			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.3</BluntDamageMultiplier>
@@ -134,25 +134,25 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	</ThingDef>
   
-    <!--=============== Gjallarian Component ====================-->
+    <!--=============== Templar Component ====================-->
   
   <ThingDef ParentName="ResourceBase">
-		<defName>Hrutar_Component</defName>
-		<label>Gjallarian Component</label>
-		<description>Insert Lore hehe.</description>
+		<defName>Hrutar_TemplarComponent</defName>
+		<label>Templar Component</label>
+		<description>Templar components are made exclusively for the templar's given technology, used in Buildings, Defenses, Ships, etc.. it also fetches a high price.</description>
 		<graphicData>
 			<texPath>Things/Items/GComponent</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
-    <stackLimit>75</stackLimit>
+    <stackLimit>35</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>450</MarketValue>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>250</MarketValue>
       <Mass>16</Mass>
-      <Flammability>0.6</Flammability>
+      <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>

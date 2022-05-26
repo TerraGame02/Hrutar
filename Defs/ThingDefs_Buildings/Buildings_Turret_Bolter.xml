@@ -66,9 +66,8 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
     </statBases>
     <costList>
-	  <Steel>85</Steel>
-      <Hrutar_BlackSteel>95</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>75</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>3</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_BastionTech</li>
@@ -209,9 +208,8 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
     </statBases>
     <costList>
-	  <Steel>200</Steel>
-      <Hrutar_BlackSteel>275</Hrutar_BlackSteel>
-      <Hrutar_Component>14</Hrutar_Component>
+      <Hrutar_SvarturAlloy>150</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>6</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_T2BastionTech</li>
@@ -352,9 +350,8 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
     </statBases>
     <costList>
-	  <Steel>300</Steel>
-      <Hrutar_BlackSteel>400</Hrutar_BlackSteel>
-      <Hrutar_Component>16</Hrutar_Component>
+      <Hrutar_SvarturAlloy>200</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>10</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_T3BastionTech</li>

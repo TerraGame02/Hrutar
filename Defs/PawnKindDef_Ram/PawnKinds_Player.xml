@@ -15,22 +15,11 @@
 		<baseRecruitDifficulty>1</baseRecruitDifficulty>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<defaultFactionType>PlayerRamColony</defaultFactionType>
-		<apparelMoney>
-			<min>5000</min>
-			<max>6000</max>
-		</apparelMoney>	
+		<apparelMoney>5000~8000</apparelMoney>
         <apparelTags>
             <li>RAM_Casual</li>	
 			<li>RAM_Worker</li>
         </apparelTags>
-		<weaponMoney>
-			<min>500000</min>
-			<max>900000</max>
-		</weaponMoney>
-		<weaponTags>
-		    <li>RAM_TemplarTools</li>
-			<li>RAM_TemplarPistol</li>
-		</weaponTags>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 	</PawnKindDef>
@@ -396,6 +385,4 @@
 		<apparelAllowHeadgearChance>100</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
-	
-	
 </Defs>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="RamShellBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>25</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>125</MarketValue>
+      <Mass>1.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>MortarShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="MakeableShellBase" ParentName="RamShellBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>800</workAmount>
+      <targetCountAdjustment>5</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>ValiNanoFabricator</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- High-explosive -->
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>RAM_HE_Shells</defName>
+    <label>Templar HE Shells</label>
+    <description>A templar tech rocket propelled armor penetrating shell filled with compressed fission charges. Used by Artillery and Ground support weaponry. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Items/RAM_HE_SHELLS</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>RAM_HE_Shell</projectileWhenLoaded>
+    <costList>
+      <Hrutar_SvarturAlloy>15</Hrutar_SvarturAlloy>
+      <RawMagma>15</RawMagma>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Hrutar_SvarturAlloy>25</Hrutar_SvarturAlloy>
+        <RawMagma>15</RawMagma>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <researchPrerequisite>HrutarTemplarTech</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RAM_HE_Shell</defName>
+    <label>HE shell</label>
+    <graphicData>
+      <texPath>Bullets/RAM_ArtilleryShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>60</speed>
+      <explosionRadius>4.5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  <!-- HE-Missile -->
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>RAM_HE_Missile</defName>
+    <label>Templar HE Missile</label>
+    <description>A templar tech rocket propelled armor penetrating shell filled with compressed fission charges. Used by Missile Turrets and Ground support weaponry. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Items/RAM_HE_MISSILE</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>RAM_HE_Shell</projectileWhenLoaded>
+    <costList>
+      <Hrutar_SvarturAlloy>15</Hrutar_SvarturAlloy>
+      <RawMagma>15</RawMagma>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Hrutar_SvarturAlloy>25</Hrutar_SvarturAlloy>
+        <RawMagma>15</RawMagma>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <researchPrerequisite>HrutarTemplarTech</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RAM_HE_Rocket</defName>
+    <label>HE Rocket</label>
+    <graphicData>
+      <texPath>Bullets/Viking_MSL</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>75</speed>
+      <explosionRadius>4.5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <!-- EMP -->
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>RAM_EMP_Missile</defName>
+    <label>Templar EMP Missile</label>
+    <description>A missile filled with electro magnetic pulse charges. Electromagnetic pulses temporarily disable electrical devices and mechanoids. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Items/RAM_EMP_MISSILE</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>11.9</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_EMP</projectileWhenLoaded>
+    <costList>
+      <Hrutar_SvarturAlloy>15</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>2</Hrutar_TemplarComponent>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Hrutar_SvarturAlloy>25</Hrutar_SvarturAlloy>
+        <Hrutar_TemplarComponent>2</Hrutar_TemplarComponent>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <researchPrerequisite>HrutarTemplarTech</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>RAM_Missile_EMP</defName>
+    <label>EMP Rocket</label>
+    <graphicData>
+      <texPath>Bullets/Banshee_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>75</speed>
+      <explosionRadius>8.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <!-- Mjolnir Shells -->
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>RAM_Mjolnir_SHELLS</defName>
+    <label>Stormbreaker Shells</label>
+    <description>A Highly volatile shell exclusively designed for the Mjolnir Super Weapon to counter swarms of enemies. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Items/RAM_MJOLNIR_SHELLS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>RAM_HE_Shell</projectileWhenLoaded>
+    <costList>
+      <Hrutar_SvarturAlloy>500</Hrutar_SvarturAlloy>
+      <RawMagma>600</RawMagma>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Hrutar_SvarturAlloy>250</Hrutar_SvarturAlloy>
+        <RawMagma>300</RawMagma>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <researchPrerequisite>HrutarTemplar_JudgementTech</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RAM_MJOLNIR_SHELL</defName>
+    <label>Stormbreaker Shell</label>
+    <graphicData>
+      <texPath>Bullets/Mjolnir</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>60</speed>
+      <explosionRadius>20</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+</Defs>

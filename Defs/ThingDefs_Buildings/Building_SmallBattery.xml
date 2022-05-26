@@ -4,7 +4,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>SuviBatterySmall</defName>
         <label>Small Fission Battery</label>
-        <description>Hrutarian Tech Spacer Fission Battery. Energy Capacity: 9500</description>
+        <description>Tier 1 Fission Battery. Energy Capacity: 11500</description>
         <drawerType>MapMeshAndRealTime</drawerType>
         <thingClass>HrutarianPowerGen.Building_SmallFissionBattery</thingClass>
         <graphicData>
@@ -41,15 +41,15 @@
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
         </building>
     <costList>
-      <Hrutar_BlackSteel>120</Hrutar_BlackSteel>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_SvarturAlloy>115</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
 	</researchPrerequisites>
         <comps>
             <li Class="CompProperties_Battery">
-                <storedEnergyMax>7500</storedEnergyMax>
+                <storedEnergyMax>11500</storedEnergyMax>
                 <efficiency>0.55</efficiency>
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <transmitsPower>true</transmitsPower>

@@ -42,7 +42,7 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Hrutar_BlackSteel</thingDef>
+          <thingDef>Hrutar_SvarturAlloy</thingDef>
           <count>800</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
@@ -52,7 +52,7 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Hrutar_Component</thingDef>
+          <thingDef>Hrutar_TemplarComponent</thingDef>
           <count>40</count>
         </li>
 		<li Class="ScenPart_StartingThing_Defined">
@@ -112,17 +112,7 @@
           <thingDef>Steel</thingDef>
           <count>720</count>
         </li>
-        <li Class="ScenPart_ScatterThingsAnywhere">
-          <def>ScatterThingsAnywhere</def>
-          <thingDef>Hrutar_BlackSteel</thingDef>
-          <count>250</count>
-        </li>
-        <li Class="ScenPart_ScatterThingsAnywhere">
-          <def>ScatterThingsAnywhere</def>
-          <thingDef>RAM_MealPack</thingDef>
-          <count>25</count>
-        </li>
-        
+		
 		<li Class="ScenPart_StartingResearch">
 		  <def>StartingResearch</def>
 		  <project>HrutarTemplarTech</project>

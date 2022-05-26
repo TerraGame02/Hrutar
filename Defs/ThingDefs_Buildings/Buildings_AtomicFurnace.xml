@@ -4,7 +4,7 @@
   <ThingDef ParentName="BenchBase">
     <defName>ValiAtomicFurnace</defName>
     <label>Atomic Furnace/Refinery</label>
-    <description>Hrutarian Tech Refinery and Furnace in one Machine</description>
+    <description>Hrutarian Tech Refinery and Furnace used for industrial functions and capabalities in the empire.</description>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <graphicData>
       <texPath>Things/Building/Assets/AtomicFurnace</texPath>
@@ -22,9 +22,8 @@
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-	  <Steel>300</Steel>
-      <Hrutar_BlackSteel>470</Hrutar_BlackSteel>
-      <Hrutar_Component>22</Hrutar_Component>
+      <Hrutar_SvarturAlloy>470</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>20</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -34,9 +33,10 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>9850</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>7850</WorkToBuild>
+      <MaxHitPoints>1280</MaxHitPoints>
       <Flammability>1.0</Flammability>
+	  <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
     </statBases>
     <size>(5,5)</size>
     <designationCategory>Production</designationCategory>
@@ -61,12 +61,12 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>9750</basePowerConsumption>
+        <basePowerConsumption>5000</basePowerConsumption>
         <shortCircuitInRain>true</shortCircuitInRain>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">
-        <glowRadius>10</glowRadius>
+        <glowRadius>12</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">

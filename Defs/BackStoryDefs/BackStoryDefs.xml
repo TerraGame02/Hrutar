@@ -261,38 +261,6 @@
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Medical_Apprentice</defName>
-		<title>medical apprentice</title>
-		<titleShort>nurse</titleShort>
-		<baseDescription>{PAWN_nameDef}'s homeworld was one steeped in more violence than usual for those in the hrutarian empire. When a passing doctor noticed how {PAWN_nameDef} cared for the injured, they decided to take {PAWN_nameDef} on as an apprentice.</baseDescription>
-		<slot>Childhood</slot>
-		<skillGains>
-			<li>
-				<defName>Medicine</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Intellectual</defName>
-				<amount>2</amount>
-			</li>
-		</skillGains>
-		<femaleCommonality>60</femaleCommonality>
-		<spawnCategories>
-			<li>Ram_Base</li>
-		</spawnCategories>
-		<forcedTraits>
-			<li>
-				<defName>RAM_Hrutar</defName>
-				<chance>100</chance>
-			</li>
-        </forcedTraits>
-	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef ParentName="Ram_Base">
 		<defName>RAM_Researcher_Apprentice</defName>
 		<title>researcher apprentice</title>
 		<titleShort>apprentice</titleShort>
@@ -452,7 +420,7 @@
 		<defName>RAM_Natural_Born</defName>
 		<title>natural born</title>
 		<titleShort>natural born</titleShort>
-		<baseDescription>{PAWN_nameDef} was born through natural means, a rarity to be sure but not unheard of in the empire. However, immediately after birth, {PAWN_nameDef}  was taken away to be trained for war.</baseDescription>
+		<baseDescription>{PAWN_nameDef} was born through natural means, a rarity to be sure but not unheard of in the empire. However, immediately after birth, {PAWN_nameDef} was taken away to be trained for war.</baseDescription>
 		<slot>Childhood</slot>
 		<skillGains>
 			<li>
@@ -529,80 +497,6 @@
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Hrutarian_Artist</defName>
-		<title>hrutarian artist</title>
-		<titleShort>artist</titleShort>
-		<baseDescription>{PAWN_nameDef} is one of the few in the empire permitted to find beauty between the constant violence of the empire, embrace it and turn it into works of art.</baseDescription>
-		<slot>Childhood</slot>
-		<skillGains>
-			<li>
-				<defName>Artistic</defName>
-				<amount>8</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>3</amount>
-			</li>
-		</skillGains>		
-		<femaleCommonality>40</femaleCommonality>	
-		<spawnCategories>
-			<li>Ram_Base</li>
-		</spawnCategories>
-		<disallowedTraits>
-        </disallowedTraits>
-		<forcedTraits>
-			<li>
-				<defName>RAM_Hrutar</defName>
-				<chance>100</chance>
-			</li>
-			<li>
-				<defName>RAM_InspiredArtist</defName>
-				<chance>30</chance>
-			</li>
-        </forcedTraits>
-	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Hrutarian_Singer</defName>
-		<title>hrutarian singer</title>
-		<titleShort>singer</titleShort>
-		<baseDescription>{PAWN_nameDef} has a path that differs from most of the empire, finding strength of voice instead of combat strength, finding expression in art and music, rather than expressions of violence. </baseDescription>
-		<slot>Childhood</slot>
-		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Shooting</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>9</amount>
-			</li>
-			<li>
-				<defName>Intellectual</defName>
-				<amount>6</amount>
-			</li>
-		</skillGains>	
-		<femaleCommonality>40</femaleCommonality>		
-		<spawnCategories>
-			<li>Ram_Base</li>
-		</spawnCategories>
-		<forcedTraits>
-			<li>
-				<defName>RAM_Hrutar</defName>
-				<chance>100</chance>
-			</li>
-			<li>
-				<defName>RAM_GiftedSinger</defName>
-				<chance>40</chance>
-			</li>
-        </forcedTraits>
-	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef ParentName="Ram_Base">
 		<defName>RAM_Valkyrie_Daughter</defName>
 		<title>valkyrie daughter</title>
 		<titleShort>valkyrie daughter</titleShort>
@@ -657,8 +551,8 @@
 	<!-- Adulthood -->
 
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Gjallarhorn_Agriculturist</defName>
-		<title>gjallarhorn agriculturist</title>
+		<defName>RAM_Templar_Agriculturist</defName>
+		<title>Templar Agriculturist</title>
 		<titleShort>agriculturist</titleShort>
 		<baseDescription>{PAWN_nameDef} is the unseen fighter of the empire, the one staving off the hunger of the soldiers, rather than the enemies to the front. </baseDescription>
 		<slot>Adulthood</slot>
@@ -696,8 +590,8 @@
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Hrutarian_Tamer</defName>
-		<title>hrutarian tamer</title>
+		<defName>RAM_Templar_Tamer</defName>
+		<title>Templar Tamer</title>
 		<titleShort>tamer</titleShort>
 		<baseDescription>{PAWN_nameDef} is a skilled animal handler and menagerie owner, the Queen often ask for their assistance in procurring beasts of burden and animals of war.</baseDescription>
 		<slot>Adulthood</slot>
@@ -735,8 +629,8 @@
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Gjallarhorn_Manufacturer</defName>
-		<title>gjallarhorn manufacturer</title>
+		<defName>RAM_Templar_Manufacturer</defName>
+		<title>Templar Manufacturer</title>
 		<titleShort>manufacturer</titleShort>
 		<baseDescription>{PAWN_nameDef} works on the fields of steel, as a talented manufacture of goods and arms for the empire.</baseDescription>
 		<slot>Adulthood</slot>
@@ -778,47 +672,8 @@
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Gjallarhorn_Doctor</defName>
-		<title>gjallarhorn doctor</title>
-		<titleShort>doctor</titleShort>
-		<baseDescription>{PAWN_nameDef} is a renowned doctor of the empire, even when medical technology has surpassed what most doctors can do, {PAWN_nameDef} still continues to be one of the best.</baseDescription>
-		<slot>Adulthood</slot>
-		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Medicine</defName>
-				<amount>7</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Intellectual</defName>
-				<amount>2</amount>
-			</li>		
-		</skillGains>
-		<spawnCategories>
-			<li>Ram_Base</li>
-		</spawnCategories>
-		<forcedTraits>
-			<li>
-				<defName>RAM_Saviour</defName>
-				<chance>10</chance>
-			</li>
-        </forcedTraits>
-	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Gjallarhorn_Researcher</defName>
-		<title>gjallarhorn researcher</title>
+		<defName>RAM_Templar_Researcher</defName>
+		<title>Templar Researcher</title>
 		<titleShort>researcher</titleShort>
 		<baseDescription>{PAWN_nameDef} is the intellectual who helps keep the empire ahead of the curve and one step in front of their enemies with new technology.</baseDescription>
 		<slot>Adulthood</slot>
@@ -910,19 +765,19 @@
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
-		<defName>RAM_Gjallarhorn_Soldier</defName>
-		<title>gjallarhorn soldier</title>
-		<titleShort>soldier</titleShort>
+		<defName>RAM_Templar</defName>
+		<title>Templar</title>
+		<titleShort>Templar</titleShort>
 		<baseDescription>{PAWN_nameDef} is the shield that protects the queen. {PAWN_nameDef} is the sword that strikes down those that would stand before the queen. </baseDescription>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
 				<defName>Shooting</defName>
-				<amount>5</amount>
+				<amount>6</amount>
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>5</amount>
+				<amount>6</amount>
 			</li>
 			<li>
 				<defName>Social</defName>
@@ -932,46 +787,80 @@
 				<defName>Intellectual</defName>
 				<amount>2</amount>
 			</li>
-			<li>
-				<defName>Medicine</defName>
-				<amount>2</amount>
-			</li>
 		</skillGains>
 		<spawnCategories>
-			<li>RAM_Templar_Soldier</li>
+			<li>RAM_Templar</li>
 		</spawnCategories>
 		<forcedTraits>
         </forcedTraits>
 	</AlienRace.BackstoryDef>
 
 	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Templar_Sentinel</defName>
+		<title>Templar Sentinel</title>
+		<titleShort>Sentinel</titleShort>
+		<baseDescription>{PAWN_nameDef} was molded from a templar to who she is today. </baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Ram_Sentinel</li>
+		</spawnCategories>
+		<forcedTraits>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
 		<defName>RAM_Templar_Guardian</defName>
 		<title>Templar Guardian</title>
-		<titleShort>soldier</titleShort>
+		<titleShort>Guardian</titleShort>
 		<baseDescription>{PAWN_nameDef} is the bastion of her templar sisters. {PAWN_nameDef} is the unbreakable will of the Leivateinn Templars. </baseDescription>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
 				<defName>Shooting</defName>
-				<amount>7</amount>
+				<amount>10</amount>
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>7</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Intellectual</defName>
-				<amount>2</amount>
+				<amount>10</amount>
 			</li>
 		</skillGains>
 		<spawnCategories>
-			<li>Templar_Guardian</li>
+			<li>Ram_Guardian</li>
 		</spawnCategories>
 		<forcedTraits>
+        </forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="Ram_Base">
+		<defName>RAM_Templar_Warmaster</defName>
+		<title>Templar Warmaster</title>
+		<titleShort>soldier</titleShort>
+		<baseDescription>{PAWN_nameDef} has achieved the embodiment of strenght and will, and has gained the blessing of becoming a Warmaster bestowed by the High Rulers of Gaia. </baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>10</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Ram_Warmaster</li>
+		</spawnCategories>
+		<forcedTraits>
+			<li>
+				<defName>RAM_Warmaster</defName>
+				<chance>100</chance>
+			</li>
         </forcedTraits>
 	</AlienRace.BackstoryDef>
 

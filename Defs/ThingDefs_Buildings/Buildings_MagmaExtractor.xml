@@ -3,7 +3,7 @@
 
 <ThingDef ParentName="BuildingBase">
     <defName>MagmaExtractorTierOne</defName>
-    <label>Magma Extractor Tier One</label>
+    <label>Magma Extractor: T1</label>
     <description>Drills through deep beneath the planet's core to harvest and process Magma.</description>
     <graphicData>
       <texPath>Things/Building/Assets/T1_MagmaEx</texPath>
@@ -18,9 +18,8 @@
       <li>BuildingsSpecial</li>
     </thingCategories>
     <costList>
-	  <Steel>95</Steel>
-      <Hrutar_BlackSteel>50</Hrutar_BlackSteel>
-      <Hrutar_Component>3</Hrutar_Component>
+      <Hrutar_SvarturAlloy>115</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -31,10 +30,10 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1200</basePowerConsumption>
+        <basePowerConsumption>800</basePowerConsumption>
       </li>
 	  <li Class="CompProperties_Glower">
-        <glowRadius>6</glowRadius>
+        <glowRadius>7</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -42,7 +41,7 @@
       <li Class="CompProperties_Spawner">
         <requiresPower>true</requiresPower>
         <thingToSpawn>RawMagma</thingToSpawn>
-        <spawnCount>15</spawnCount>
+        <spawnCount>25</spawnCount>
         <spawnIntervalRange><min>50000</min><max>50000</max></spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>
@@ -54,9 +53,8 @@
     </comps>
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
-      <MarketValue>1500</MarketValue>
       <MaxHitPoints>300</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
       <Beauty>4</Beauty>
       <Mass>35</Mass>
       <WorkToBuild>2500</WorkToBuild>
@@ -78,7 +76,7 @@
    
   <ThingDef ParentName="BuildingBase">
     <defName>MagmaExtractorTierTwo</defName>
-    <label>Hrutarian Magma Extractor Tier </label>
+    <label>Magma Extractor: T2 </label>
     <description>Drills through deep beneath the planet's core to harvest and process Magma.</description>
     <graphicData>
       <texPath>Things/Building/Assets/T2_MagmaEx</texPath>
@@ -93,9 +91,8 @@
       <li>BuildingsSpecial</li>
     </thingCategories>
     <costList>
-	  <Steel>125</Steel>
-      <Hrutar_BlackSteel>75</Hrutar_BlackSteel>
-      <Hrutar_Component>6</Hrutar_Component>
+      <Hrutar_SvarturAlloy>160</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>6</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -118,7 +115,7 @@
       <li Class="CompProperties_Spawner">
         <requiresPower>true</requiresPower>
         <thingToSpawn>RawMagma</thingToSpawn>
-        <spawnCount>50</spawnCount>
+        <spawnCount>65</spawnCount>
         <spawnIntervalRange><min>65000</min><max>65000</max></spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>
@@ -130,9 +127,8 @@
     </comps>
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
-      <MarketValue>1500</MarketValue>
       <MaxHitPoints>600</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
       <Beauty>5</Beauty>
       <Mass>35</Mass>
       <WorkToBuild>3500</WorkToBuild>

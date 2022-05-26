@@ -63,7 +63,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_Mjolnir_SHELLS</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>4</fuelCapacity>
@@ -83,9 +83,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>6000</Steel>
-      <Hrutar_BlackSteel>3500</Hrutar_BlackSteel>
-      <Hrutar_Component>200</Hrutar_Component>
+      <Hrutar_SvarturAlloy>3500</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>50</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_BastionTech</li>

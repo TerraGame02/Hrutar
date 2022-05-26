@@ -38,8 +38,8 @@
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
     <costList>
-      <Hrutar_BlackSteel>100</Hrutar_BlackSteel>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_SvarturAlloy>75</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>2</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>

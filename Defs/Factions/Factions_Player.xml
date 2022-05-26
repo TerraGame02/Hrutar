@@ -11,7 +11,7 @@
   
   <FactionDef ParentName="PlayerFactionBase">
     <defName>PlayerRamColony</defName>
-    <label>Templar Squadron</label>
+    <label>Hrutar Templars</label>
     <description>A colony of recently-arrived off-worlder ram girls.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Ram_Colonist</basicMemberKind>

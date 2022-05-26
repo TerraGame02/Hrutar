@@ -59,7 +59,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Missile</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>16</fuelCapacity>
@@ -79,9 +79,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>125</Steel>
-      <Hrutar_BlackSteel>215</Hrutar_BlackSteel>
-      <Hrutar_Component>10</Hrutar_Component>
+      <Hrutar_SvarturAlloy>125</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_BastionTech</li>
@@ -227,7 +226,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Missile</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>26</fuelCapacity>
@@ -247,9 +246,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>175</Steel>
-      <Hrutar_BlackSteel>275</Hrutar_BlackSteel>
-      <Hrutar_Component>12</Hrutar_Component>
+      <Hrutar_SvarturAlloy>185</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_T2BastionTech</li>
@@ -395,7 +393,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Missile</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>36</fuelCapacity>
@@ -415,9 +413,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>215</Steel>
-      <Hrutar_BlackSteel>315</Hrutar_BlackSteel>
-      <Hrutar_Component>14</Hrutar_Component>
+      <Hrutar_SvarturAlloy>225</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>10</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_T3BastionTech</li>

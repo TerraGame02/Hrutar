@@ -141,57 +141,7 @@
         <armorPenetration>5</armorPenetration>
       </li>
     </tools>
-  </ThingDef>
-
-  <ThingDef ParentName="MeleeWeaponUltratech">
-    <defName>RAM_Sidonias_Dragonslayer</defName>
-    <label>Sidonia's Dragonslayer</label>
-    <description>Placeholder</description>
-    <soundInteract>Interact_MonoSword</soundInteract>
-    <meleeHitSound>Heavy_Melee</meleeHitSound>
-    <equippedAngleOffset>-10</equippedAngleOffset>
-    <relicChance>3</relicChance>
-    <weaponClasses>
-      <li>MeleePiercer</li>
-    </weaponClasses>
-    <graphicData>
-      <texPath>Weapons/Sidonias_Dragonslayer</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.8</drawSize>
-      <drawOffsetSouth>(0.0, 0.0, .5)</drawOffsetSouth>
-      <drawOffsetNorth>(0.0, 0.0, .5)</drawOffsetNorth>
-      <drawOffsetEast>(0.0, 0.0, .5)</drawOffsetEast>
-      <drawOffsetWest>(0.0, 0.0, .5)</drawOffsetWest>
-    </graphicData>
-    <tools>
-      <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>35</power>
-        <cooldownTime>1.6</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>95</power>
-        <cooldownTime>2</cooldownTime>
-        <armorPenetration>2</armorPenetration>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>75</power>
-        <cooldownTime>2</cooldownTime>
-        <armorPenetration>2</armorPenetration>
-      </li>
-    </tools>
-  </ThingDef>
+  </ThingDef>  
 
   <ThingDef ParentName="MeleeWeaponUltratech">
     <defName>RAM_TemplarChainAxe</defName>
@@ -241,8 +191,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_SvarturAlloy>150</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
 	  <RawMagma>25</RawMagma>
     </costList>
   </ThingDef>
@@ -295,8 +245,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>130</Hrutar_BlackSteel>
-      <Hrutar_Component>3</Hrutar_Component>
+      <Hrutar_SvarturAlloy>130</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>3</Hrutar_TemplarComponent>
 	  <RawMagma>15</RawMagma>
     </costList>
   </ThingDef>
@@ -358,8 +308,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
-      <Hrutar_Component>1</Hrutar_Component>
+      <Hrutar_SvarturAlloy>150</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>1</Hrutar_TemplarComponent>
 	  <RawMagma>25</RawMagma>
     </costList>
   </ThingDef>
@@ -422,8 +372,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>190</Hrutar_BlackSteel>
-      <Hrutar_Component>6</Hrutar_Component>
+      <Hrutar_SvarturAlloy>190</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>6</Hrutar_TemplarComponent>
 	  <RawMagma>35</RawMagma>
     </costList>
   </ThingDef>
@@ -493,8 +443,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>110</Hrutar_BlackSteel>
-      <Hrutar_Component>2</Hrutar_Component>
+      <Hrutar_SvarturAlloy>110</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>2</Hrutar_TemplarComponent>
 	  <RawMagma>25</RawMagma>
     </costList>
   </ThingDef>
@@ -564,8 +514,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>160</Hrutar_BlackSteel>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_SvarturAlloy>160</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
 	  <RawMagma>35</RawMagma>
     </costList>
   </ThingDef>
@@ -635,7 +585,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>100</Hrutar_BlackSteel>
+      <Hrutar_SvarturAlloy>100</Hrutar_SvarturAlloy>
 	  <RawMagma>25</RawMagma>
     </costList>
   </ThingDef>
@@ -705,8 +655,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>160</Hrutar_BlackSteel>
-      <Hrutar_Component>2</Hrutar_Component>
+      <Hrutar_SvarturAlloy>160</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>2</Hrutar_TemplarComponent>
 	  <RawMagma>35</RawMagma>
     </costList>
   </ThingDef>
@@ -776,7 +726,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>80</Hrutar_BlackSteel>
+      <Hrutar_SvarturAlloy>80</Hrutar_SvarturAlloy>
 	  <RawMagma>10</RawMagma>
     </costList>
   </ThingDef>
@@ -846,7 +796,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>80</Hrutar_BlackSteel>
+      <Hrutar_SvarturAlloy>80</Hrutar_SvarturAlloy>
 	  <RawMagma>10</RawMagma>
     </costList>
   </ThingDef>
@@ -916,7 +866,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>80</Hrutar_BlackSteel>
+      <Hrutar_SvarturAlloy>80</Hrutar_SvarturAlloy>
 	  <RawMagma>10</RawMagma>
     </costList>
   </ThingDef>

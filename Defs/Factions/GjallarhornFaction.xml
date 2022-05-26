@@ -79,6 +79,7 @@
             <Ram_SentinelSpectre>1</Ram_SentinelSpectre>
             <Ram_SentinelDefender>1</Ram_SentinelDefender>
             <Ram_SentinelDevastator>5</Ram_SentinelDevastator>
+            <Mecha_Ram>1</Mecha_Ram>
           </options>
         </li>
         <li>
@@ -92,6 +93,7 @@
             <Ram_SentinelSpectre>1</Ram_SentinelSpectre>
             <Ram_SentinelDefender>1</Ram_SentinelDefender>
             <Ram_SentinelDevastator>5</Ram_SentinelDevastator>
+            <Mecha_Ram>1</Mecha_Ram>
           </options>
         </li>
         <li>
@@ -102,6 +104,7 @@
             <Ram_Trader>15</Ram_Trader>
             <Ram_TraderGuardMelee>10</Ram_TraderGuardMelee>
             <Ram_TraderGuard>10</Ram_TraderGuard>
+            <Mecha_Ram>2</Mecha_Ram>
           </options>
         </li>
         <li>

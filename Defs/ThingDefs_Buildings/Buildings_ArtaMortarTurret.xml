@@ -7,7 +7,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Turret_ArtaTurret</defName>
     <label>Arta Mortar Sentry</label>
-    <description>Ai Controlled Missile Turret.</description>
+    <description>A Long range mortar Sentry, capable of providing danger close fire support in the frontlines.</description>
   <uiIconPath>Things/Building/Assets/Arta_Icon</uiIconPath>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -43,7 +43,7 @@
     <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveRadius>1</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li>
@@ -59,7 +59,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Shells</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>12</fuelCapacity>
@@ -79,9 +79,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>75</Steel>
-      <Hrutar_BlackSteel>70</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>70</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_BastionTech</li>

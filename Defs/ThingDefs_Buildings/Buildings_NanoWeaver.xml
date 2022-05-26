@@ -22,9 +22,8 @@
 	<rotatable>false</rotatable>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <costList>
-	  <Steel>200</Steel>
-      <Hrutar_BlackSteel>225</Hrutar_BlackSteel>
-      <Hrutar_Component>10</Hrutar_Component>
+      <Hrutar_SvarturAlloy>200</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>10</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -34,8 +33,8 @@
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>2500</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Flammability>0</Flammability>
     </statBases>
     <size>(5,3)</size>
     <designationCategory>Production</designationCategory>

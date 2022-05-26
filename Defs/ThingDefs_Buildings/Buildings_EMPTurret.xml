@@ -7,7 +7,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Turret_BansheeTurret</defName>
     <label>Banshee EMP Missile</label>
-    <description>Ai Controlled Missile Turret.</description>
+    <description>The Banshee Electro Magnetic Pulse variant of the Viking Turret, it fires 3 bursts of EMP Missiles to tear down Shields and Slow down enemies.</description>
   <uiIconPath>Things/Building/Assets/EMP_Banshee_Icon</uiIconPath>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -35,7 +35,7 @@
     <statBases>
       <MaxHitPoints>1550</MaxHitPoints>
       <Flammability>0</Flammability>
-      <WorkToBuild>47500</WorkToBuild>
+      <WorkToBuild>37500</WorkToBuild>
       <Mass>500</Mass>
       <Beauty>10</Beauty>
       <ShootingAccuracyTurret>0.996</ShootingAccuracyTurret>
@@ -50,7 +50,7 @@
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>1700</basePowerConsumption>
+        <basePowerConsumption>1500</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
@@ -59,7 +59,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_EMP_Missile</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>18</fuelCapacity>
@@ -79,9 +79,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>175</Steel>
-      <Hrutar_BlackSteel>225</Hrutar_BlackSteel>
-      <Hrutar_Component>10</Hrutar_Component>
+      <Hrutar_SvarturAlloy>160</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_BastionTech</li>

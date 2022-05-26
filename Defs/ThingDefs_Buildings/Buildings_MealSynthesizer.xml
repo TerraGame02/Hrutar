@@ -4,7 +4,7 @@
  <ThingDef ParentName="BenchBase">
     <defName>ValiMealMachine</defName>
     <label>Hrutarian Meal Synthesizer</label>
-    <description>A Hrutarian high tech meal synthesizer used to synthesize and produce rations for hrutarians.</description>
+    <description>A Hrutarian high tech meal synthesizer used to synthesize and produce military grade rations.</description>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <graphicData>
       <texPath>Things/Building/Assets/MealSynthesizer</texPath>
@@ -22,9 +22,8 @@
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-	  <Steel>175</Steel>
-      <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>150</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -33,9 +32,9 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>9500</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>380</MaxHitPoints>
+      <Flammability>0</Flammability>
     </statBases>
     <size>(3,5)</size>
     <designationCategory>Production</designationCategory>
@@ -55,7 +54,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>4500</basePowerConsumption>
+        <basePowerConsumption>1000</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>

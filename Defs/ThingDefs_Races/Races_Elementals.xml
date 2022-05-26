@@ -110,6 +110,7 @@
     <defName>V_Lancer</defName>
     <label>void lancer</label>
     <race>V_Lancer</race>
+    <defaultFactionType>Void</defaultFactionType>
     <combatPower>75</combatPower>
     <lifeStages>
       <li>
@@ -181,6 +182,7 @@
     <defName>V_Marauder</defName>
     <label>void marauder</label>
     <race>V_Marauder</race>
+    <defaultFactionType>Void</defaultFactionType>
     <combatPower>300</combatPower>
     <lifeStages>
       <li>
@@ -254,6 +256,7 @@
     <defName>V_Scyther</defName>
     <label>scyther</label>
     <race>V_Scyther</race>
+    <defaultFactionType>Void</defaultFactionType>
     <combatPower>25</combatPower>
     <lifeStages>
       <li>
@@ -316,6 +319,7 @@
     <defName>V_Apostle_Razalith</defName>
     <label>apostle razalith</label>
     <race>V_Apostle_Razalith</race>
+    <defaultFactionType>Void</defaultFactionType>
     <combatPower>500</combatPower>
     <lifeStages>
       <li>
@@ -411,6 +415,7 @@
     <defName>V_Ravager</defName>
     <label>ravager</label>
     <race>V_Ravager</race>
+    <defaultFactionType>Void</defaultFactionType>
     <combatPower>250</combatPower>
     <lifeStages>
       <li>
@@ -495,6 +500,7 @@
     <label>stalker</label>
     <labelPlural>stalkers</labelPlural>
     <race>V_Stalker</race>
+    <defaultFactionType>Void</defaultFactionType>
     <combatPower>250</combatPower>
     <lifeStages>
       <li>

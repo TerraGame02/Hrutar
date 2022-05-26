@@ -31,14 +31,14 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
-			<WorkToBuild>25000</WorkToBuild>
+			<WorkToBuild>5000</WorkToBuild>
 			<Mass>60</Mass>
 			<Flammability>0.5</Flammability>
+      <ResearchSpeedFactor>3.5</ResearchSpeedFactor>
 		</statBases>
 		<costList>
-	        <Steel>300</Steel>
-            <Hrutar_BlackSteel>470</Hrutar_BlackSteel>
-            <Hrutar_Component>22</Hrutar_Component>
+            <Hrutar_SvarturAlloy>125</Hrutar_SvarturAlloy>
+            <Hrutar_TemplarComponent>20</Hrutar_TemplarComponent>
 			<Gold>70</Gold>
 			<AIPersonaCore>1</AIPersonaCore>
 		</costList>

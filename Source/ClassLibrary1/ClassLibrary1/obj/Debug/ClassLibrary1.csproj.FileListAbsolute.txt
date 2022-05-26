@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DragonAgeMetals\Assemblies\ClassLibrary1.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DragonAgeMetals\Source\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DragonAgeMetals\Source\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DragonAgeMetals\Source\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RamRace build 2\Source\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RamRace build 2\Source\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RamRace build 2\Source\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RamRace build 2\Assemblies\ClassLibrary1.dll

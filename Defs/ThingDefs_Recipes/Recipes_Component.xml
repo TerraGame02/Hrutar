@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--=================================== Gjallarian Component ==========================================-->
+  <!--=================================== Templar Component ==========================================-->
 
   <RecipeDef>
-    <defName>Make_ComponentGjallarian</defName>
-    <label>Craft Gjallarian Component</label>
-    <description>Make Gjallarian Component.</description>
-    <jobString>Making Gjallarian Component.</jobString>
+    <defName>Make_TemplarComponent</defName>
+    <label>Craft Templar Component</label>
+    <description>Make Templar Component.</description>
+    <jobString>Making Templar Component.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -17,7 +17,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Hrutar_BlackSteel</li>
+            <li>Hrutar_SvarturAlloy</li>
           </thingDefs>
         </filter>
         <count>12</count>
@@ -32,7 +32,7 @@
       </li>
     </ingredients>
     <products>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
     </products>
     <skillRequirements>
       <Crafting>8</Crafting>

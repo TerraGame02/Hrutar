@@ -18,9 +18,8 @@
       <li>BuildingsSpecial</li>
     </thingCategories>
     <costList>
-	  <Steel>95</Steel>
-      <Hrutar_BlackSteel>50</Hrutar_BlackSteel>
-      <Hrutar_Component>3</Hrutar_Component>
+      <Hrutar_SvarturAlloy>115</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -41,8 +40,8 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Spawner">
         <requiresPower>true</requiresPower>
-        <thingToSpawn>GjallariumOre</thingToSpawn>
-        <spawnCount>4</spawnCount>
+        <thingToSpawn>SvarturOre</thingToSpawn>
+        <spawnCount>10</spawnCount>
         <spawnIntervalRange><min>55000</min><max>55000</max></spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>
@@ -93,9 +92,8 @@
       <li>BuildingsSpecial</li>
     </thingCategories>
     <costList>
-	  <Steel>125</Steel>
-      <Hrutar_BlackSteel>75</Hrutar_BlackSteel>
-      <Hrutar_Component>6</Hrutar_Component>
+      <Hrutar_SvarturAlloy>160</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>6</Hrutar_TemplarComponent>
     </costList>
     <researchPrerequisites>
 	  <li>HrutarTemplarTech</li>
@@ -117,8 +115,8 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Spawner">
         <requiresPower>true</requiresPower>
-        <thingToSpawn>GjallariumOre</thingToSpawn>
-        <spawnCount>16</spawnCount>
+        <thingToSpawn>SvarturOre</thingToSpawn>
+        <spawnCount>25</spawnCount>
         <spawnIntervalRange><min>75000</min><max>75000</max></spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>

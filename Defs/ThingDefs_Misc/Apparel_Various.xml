@@ -2,8 +2,8 @@
 <Defs>
 
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>RAM_SportSuit</defName>
-    <label>sport suit</label>
+    <defName>RAM_TemplarSportSuit</defName>
+    <label>Templar Sports Suit</label>
     <description>A pair of pants and top that is strong and breathable.</description>
     <graphicData>
       <texPath>Apparel/SportSuit</texPath>
@@ -12,7 +12,6 @@
     </graphicData>
     <techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>1050</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>4</Mass>
@@ -41,8 +40,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>2</Hrutar_BlackSteel>
-      <Hrutar_Component>1</Hrutar_Component>
+      <Hrutar_SvarturAlloy>2</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>1</Hrutar_TemplarComponent>
 	  <RawMagma>6</RawMagma>
 	  <HrutarNanoFiber>35</HrutarNanoFiber>
     </costList>
@@ -82,7 +81,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>900</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>4</Mass>
@@ -111,8 +109,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>2</Hrutar_BlackSteel>
-      <Hrutar_Component>1</Hrutar_Component>
+      <Hrutar_SvarturAlloy>2</Hrutar_SvarturAlloy>
 	  <RawMagma>6</RawMagma>
 	  <HrutarNanoFiber>35</HrutarNanoFiber>
     </costList>
@@ -142,8 +139,8 @@
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>RAM_GjallarianJumpSuit</defName>
-    <label>Gjallarian JumpSuit</label>
+    <defName>RAM_TemplarJumpSuit</defName>
+    <label>Templar JumpSuit</label>
     <description>A pair of pants and top that is strong and breathable.</description>
     <graphicData>
       <texPath>Apparel/GjallarianJumpSuit</texPath>
@@ -152,7 +149,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>1000</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>7</Mass>
@@ -181,8 +177,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>5</Hrutar_BlackSteel>
-      <Hrutar_Component>2</Hrutar_Component>
+      <Hrutar_SvarturAlloy>2</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>2</Hrutar_TemplarComponent>
 	  <RawMagma>6</RawMagma>
 	  <HrutarNanoFiber>50</HrutarNanoFiber>
     </costList>
@@ -222,7 +218,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>1800</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>7</Mass>
@@ -251,8 +246,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>10</Hrutar_BlackSteel>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_SvarturAlloy>10</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
 	  <RawMagma>15</RawMagma>
 	  <HrutarNanoFiber>70</HrutarNanoFiber>
     </costList>
@@ -292,7 +287,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>3000</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>450</MaxHitPoints>
       <Mass>10</Mass>
@@ -321,8 +315,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>10</Hrutar_BlackSteel>
-      <Hrutar_Component>6</Hrutar_Component>
+      <Hrutar_SvarturAlloy>10</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>6</Hrutar_TemplarComponent>
 	  <RawMagma>10</RawMagma>
 	  <HrutarNanoFiber>85</HrutarNanoFiber>
 	  <Gold>10</Gold>
@@ -363,7 +357,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>600</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>450</MaxHitPoints>
       <Mass>3</Mass>
@@ -434,7 +427,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>790</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>5</Mass>
@@ -465,8 +457,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>10</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>10</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
 	  <RawMagma>30</RawMagma>
     </costList>
     <apparel>
@@ -504,7 +496,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>790</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>5</Mass>
@@ -535,8 +526,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>20</Hrutar_BlackSteel>
-      <Hrutar_Component>6</Hrutar_Component>
+      <Hrutar_SvarturAlloy>20</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>6</Hrutar_TemplarComponent>
 	  <RawMagma>30</RawMagma>
     </costList>
     <apparel>
@@ -575,7 +566,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>4500</MarketValue>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>650</MaxHitPoints>
       <Mass>65</Mass>
@@ -604,8 +594,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>190</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>190</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
 	  <RawMagma>50</RawMagma>
 	  <HrutarNanoFiber>18</HrutarNanoFiber>
     </costList>
@@ -646,7 +636,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>3060</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>400</MaxHitPoints>
       <Mass>35</Mass>
@@ -675,8 +664,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>120</Hrutar_BlackSteel>
-      <Hrutar_Component>4</Hrutar_Component>
+      <Hrutar_SvarturAlloy>120</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>4</Hrutar_TemplarComponent>
 	  <RawMagma>30</RawMagma>
 	  <HrutarNanoFiber>10</HrutarNanoFiber>
     </costList>
@@ -715,7 +704,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>8800</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>1350</MaxHitPoints>
       <Mass>100</Mass>
@@ -745,8 +733,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>280</Hrutar_BlackSteel>
-      <Hrutar_Component>14</Hrutar_Component>
+      <Hrutar_SvarturAlloy>280</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>14</Hrutar_TemplarComponent>
 	  <RawMagma>80</RawMagma>
 	  <HrutarNanoFiber>45</HrutarNanoFiber>
     </costList>
@@ -790,7 +778,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>6800</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>1000</MaxHitPoints>
       <Mass>50</Mass>
@@ -819,8 +806,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>300</Hrutar_BlackSteel>
-      <Hrutar_Component>16</Hrutar_Component>
+      <Hrutar_SvarturAlloy>300</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>16</Hrutar_TemplarComponent>
 	  <RawMagma>100</RawMagma>
 	  <HrutarNanoFiber>25</HrutarNanoFiber>
     </costList>
@@ -859,7 +846,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>6700</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>900</MaxHitPoints>
       <Mass>70</Mass>
@@ -888,8 +874,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>200</Hrutar_BlackSteel>
-      <Hrutar_Component>14</Hrutar_Component>
+      <Hrutar_SvarturAlloy>200</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>14</Hrutar_TemplarComponent>
 	  <RawMagma>70</RawMagma>
 	  <HrutarNanoFiber>20</HrutarNanoFiber>
     </costList>
@@ -933,7 +919,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>5100</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>450</MaxHitPoints>
       <Mass>40</Mass>
@@ -962,8 +947,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>150</Hrutar_BlackSteel>
-      <Hrutar_Component>8</Hrutar_Component>
+      <Hrutar_SvarturAlloy>150</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
 	  <RawMagma>50</RawMagma>
 	  <HrutarNanoFiber>10</HrutarNanoFiber>
     </costList>
@@ -1002,7 +987,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>9950</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>1350</MaxHitPoints>
       <Mass>100</Mass>
@@ -1032,8 +1016,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>300</Hrutar_BlackSteel>
-      <Hrutar_Component>16</Hrutar_Component>
+      <Hrutar_SvarturAlloy>300</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>16</Hrutar_TemplarComponent>
 	  <RawMagma>100</RawMagma>
 	  <HrutarNanoFiber>50</HrutarNanoFiber>
     </costList>
@@ -1069,7 +1053,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>RAM_WarMasterArmor</defName>
     <label>Templar Warmaster Armor</label>
-    <description>Placeholder.</description>
+    <description>Behold, the divine protection of leivateinn, the warmaster armor.</description>
     <graphicData>
       <texPath>Apparel/WarMasterArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1077,7 +1061,6 @@
     </graphicData>
 	<techLevel>Spacer</techLevel>
     <statBases>
-	  <MarketValue>9950</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>1350</MaxHitPoints>
       <Mass>100</Mass>
@@ -1100,17 +1083,17 @@
 	  <researchPrerequisite>HrutarTemplar_PowerArmor</researchPrerequisite>
 	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
-        <Crafting>14</Crafting>
+        <Crafting>20</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
         <li>ValiAtomicFurnace</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Hrutar_BlackSteel>300</Hrutar_BlackSteel>
-      <Hrutar_Component>16</Hrutar_Component>
-	  <RawMagma>100</RawMagma>
-	  <HrutarNanoFiber>50</HrutarNanoFiber>
+      <Hrutar_SvarturAlloy>500</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>35</Hrutar_TemplarComponent>
+	  <RawMagma>500</RawMagma>
+	  <HrutarNanoFiber>150</HrutarNanoFiber>
     </costList>
     <apparel>
       <bodyPartGroups>
@@ -1140,6 +1123,5 @@
       </options>
     </colorGenerator>
   </ThingDef>
-
-
+  
 </Defs>

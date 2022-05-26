@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>ExtractMetalFromOre</defName>
+    <label>Extract Metals from Ore</label>
+    <description>Using the Atomic Furnace to extract and purify the alloy in raw ores.</description>
+    <jobString>Extracting metals from ore.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SvarturOre</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>RawMagma</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Hrutar_SvarturAlloy>25</Hrutar_SvarturAlloy>
+    </products>
+  </RecipeDef>
+
+</Defs>

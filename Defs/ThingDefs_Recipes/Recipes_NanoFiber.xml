@@ -12,7 +12,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Hrutar_BlackSteel</li>
+						<li>Hrutar_SvarturAlloy</li>
 					</thingDefs>
 				</filter>
 				<count>35</count>
@@ -28,7 +28,7 @@
    </ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Hrutar_BlackSteel</li>
+				<li>Hrutar_SvarturAlloy</li>
 				<li>Cloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>

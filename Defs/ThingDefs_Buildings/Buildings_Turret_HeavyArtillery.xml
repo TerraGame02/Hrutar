@@ -64,7 +64,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Shells</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>10</fuelCapacity>
@@ -84,9 +84,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>125</Steel>
-      <Hrutar_BlackSteel>225</Hrutar_BlackSteel>
-      <Hrutar_Component>10</Hrutar_Component>
+      <Hrutar_SvarturAlloy>260</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>8</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_BastionTech</li>
@@ -238,7 +237,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Shells</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>16</fuelCapacity>
@@ -258,9 +257,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>225</Steel>
-      <Hrutar_BlackSteel>325</Hrutar_BlackSteel>
-      <Hrutar_Component>14</Hrutar_Component>
+      <Hrutar_SvarturAlloy>290</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>12</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_T2BastionTech</li>
@@ -412,7 +410,7 @@
         <fuelGizmoLabel>Belt</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Shell_HighExplosive</li>
+            <li>RAM_HE_Shells</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>16</fuelCapacity>
@@ -432,9 +430,8 @@
     <fillPercent>0.5</fillPercent>
     <hasTooltip>true</hasTooltip>
     <costList>
-	  <Steel>325</Steel>
-      <Hrutar_BlackSteel>425</Hrutar_BlackSteel>
-      <Hrutar_Component>16</Hrutar_Component>
+      <Hrutar_SvarturAlloy>400</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>16</Hrutar_TemplarComponent>
     </costList>
 	<researchPrerequisites>
 	  <li>HrutarTemplar_T3BastionTech</li>

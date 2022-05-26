@@ -18,9 +18,8 @@
     <thingCategories Inherit="false" />
     <size>(7,4)</size>
     <costList>
-	  <Steel>275</Steel>
-      <Hrutar_BlackSteel>350</Hrutar_BlackSteel>
-      <Hrutar_Component>16</Hrutar_Component>
+      <Hrutar_SvarturAlloy>450</Hrutar_SvarturAlloy>
+      <Hrutar_TemplarComponent>16</Hrutar_TemplarComponent>
     </costList>
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
@@ -42,7 +41,7 @@
     <recipes>
       <li>Make_ComponentIndustrial</li>
       <li>Make_ComponentSpacer</li>
-	  <li>Make_ComponentGjallarian</li>
+	  <li>Make_TemplarComponent</li>
     </recipes>
     <graphicData>
       <texPath>Things/Building/Assets/NanoFabricator</texPath>
